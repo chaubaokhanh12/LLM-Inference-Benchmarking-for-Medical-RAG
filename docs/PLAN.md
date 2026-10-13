@@ -40,7 +40,7 @@ Spec gốc: [medical_rag_spec.md](medical_rag_spec.md) (phần 1) và [llm_bench
 - [x] P8 Đánh giá retrieval 4 cấu hình (hybrid+rerank R@10 = 1,000, MRR@10 = 0,959) và câu trả lời
       (Ollama qwen2.5:3b); ngưỡng rerank 0,3; thêm câu nhắc trích dẫn cuối prompt  → **M3**
 - [x] P9 `export_prompts.py`: 300 prompt, VI p50 1.859 / EN p50 1.666 token (Qwen2.5-7B), `stats.json`, `manifest.json`
-- [ ] P9b Thử vLLM Docker local (cần Docker Desktop + ~10 GB image)
+- [x] P9b vLLM 0.31.0 Docker local: đổi backend chỉ bằng `.env` (check_backend.py), load test 1/4/8 người dùng (throughput 24 → 188 tok/s); cần driver CUDA 13 (617.42)
 - [x] P10 README có bảng kết quả và hướng dẫn chạy lại  → **M4**
 - [x] Phần 2 — khung `inference-bench/`: load generator closed-loop, HF baseline server, GPU/vLLM
       metrics, `bench.run`, 14 config E1–E5, aggregate + 6 biểu đồ, quality_eval, test; đã chạy

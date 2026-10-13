@@ -98,6 +98,11 @@ LLM_MODEL=qwen2.5-1.5b-awq
 LLM_BASE_URL=http://localhost:8000/v1
 ```
 
+Verified on the laptop with vLLM 0.31.0 in Docker (Qwen2.5-1.5B-Instruct-AWQ): with only those
+three lines changed, `python scripts/check_backend.py` sends real exported prompts through the
+same backend code and gets answers in the right language with `[i]` citations; the server's
+`prompt_tokens` match the token counts of the export.
+
 ## Evaluation
 
 ```bash

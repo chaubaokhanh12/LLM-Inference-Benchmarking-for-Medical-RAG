@@ -98,4 +98,25 @@ python -m bench.load_gen --base-url http://localhost:11434/v1 --model qwen2.5:3b
 
 ## Results
 
-_Pending GPU runs._
+_Pending GPU runs (L4)._
+
+### Local smoke test (not a benchmark result)
+
+The harness was exercised end to end on a laptop RTX 2050 (4 GB) with vLLM 0.31.0 in Docker
+serving Qwen2.5-1.5B-Instruct-AWQ, 24 real RAG prompts per level, 128 output tokens:
+
+| Concurrent users | Throughput | TPOT p50 | End-to-end p50 | Max KV-cache use | Prefix-cache hit rate |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 24 tok/s | 35 ms | 4.2 s | 4% | 28% |
+| 4 | 96 tok/s | 37 ms | 3.7 s | 13% | 99% |
+| 8 | 188 tok/s | 35 ms | 3.7 s | 23% | 99% |
+
+- **Continuous batching:** 8 users get 7.8× the throughput of one user with the same
+  per-token speed; no request waited (`vllm:num_requests_waiting` stayed 0).
+- **KV-cache arithmetic checks out:** 2 × 28 layers × 2 KV heads × 128 dims × 2 bytes =
+  28 KB per token; vLLM reported 1.54 GiB of KV cache = 57,504 tokens, ≈ 14 concurrent
+  4,096-token requests.
+- **Why E1–E3 turn prefix caching off.** With it on (the v0.31 default), the 4- and 8-user
+  phases re-sent prompts already seen at 1 user, hit the cache for 99% of prompt tokens, and
+  showed a misleadingly low TTFT (~110 ms vs ~440 ms). On fresh prompts the hit rate was 28%:
+  roughly the share of the shared system prompt and chat template — a first estimate for E4.

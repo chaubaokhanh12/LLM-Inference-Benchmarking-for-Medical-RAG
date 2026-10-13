@@ -1,16 +1,22 @@
-# Local vLLM server (OpenAI-compatible, port 8000) for development on a small GPU.
+# Local vLLM server (OpenAI-compatible) for development on a small GPU.
 #
-#   docker compose -f docker/vllm-compose.yml up -d
+#   docker compose -f docker/vllm-compose.yml up -d          # first start ~3 min
 #   curl http://localhost:8000/v1/models
+#   VLLM_HOST_PORT=8010 docker compose -f docker/vllm-compose.yml up -d   # if 8000 is taken
 #
-# Defaults fit a 4 GB laptop GPU next to the embedding model and reranker:
-# a 4-bit 1.5B model, at most 45% of VRAM, no CUDA graphs (--enforce-eager saves memory).
+# Requirements: NVIDIA driver with CUDA >= 13 for v0.31 images (checked: 617.42 works;
+# 552.x fails with "unsatisfied condition: cuda>=13.0"). The image is ~32 GB unpacked.
+#
+# Defaults target a 4 GB laptop GPU: a 4-bit 1.5B model (1.1 GiB of weights) with 75% of VRAM,
+# which leaves ~1.5 GiB of KV cache (57k tokens, ~14 concurrent 4k-token requests) but no room
+# for the embedding model and reranker — run retrieval on the CPU or in a separate phase.
+# No CUDA graphs (--enforce-eager) to save memory. Prefix caching is on by default in v0.31.
 # Real benchmark numbers come from a larger GPU (see docs/llm_benchmark_spec.md).
 #
-# Then in medical-rag/.env:
+# Then in medical-rag/.env (no code change), and check with scripts/check_backend.py:
 #   LLM_BACKEND=vllm
 #   LLM_MODEL=qwen2.5-1.5b-awq        # = --served-model-name
-#   LLM_BASE_URL=http://localhost:8000/v1
+#   LLM_BASE_URL=http://localhost:8000/v1   (or the VLLM_HOST_PORT you chose)
 services:
   vllm:
     image: vllm/vllm-openai:${VLLM_VERSION:-v0.31.0}
@@ -18,10 +24,10 @@ services:
       - --model=${VLLM_MODEL:-Qwen/Qwen2.5-1.5B-Instruct-AWQ}
       - --served-model-name=${VLLM_SERVED_NAME:-qwen2.5-1.5b-awq}
       - --max-model-len=4096
-      - --gpu-memory-utilization=${VLLM_GPU_UTIL:-0.45}
+      - --gpu-memory-utilization=${VLLM_GPU_UTIL:-0.75}
       - --enforce-eager
     ports:
-      - "8000:8000"
+      - "${VLLM_HOST_PORT:-8000}:8000"   # set VLLM_HOST_PORT if 8000 is taken
     volumes:
       - ${USERPROFILE:-~}/.cache/huggingface:/root/.cache/huggingface
     ipc: host
