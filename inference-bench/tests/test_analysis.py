@@ -50,6 +50,7 @@ def write_run(root, experiment, config, levels, speed, sat, rng):
             w = csv.DictWriter(f, fieldnames=list(rows[0]))
             w.writeheader()
             w.writerows(rows)
+    (d / "DONE").write_text("ok")
     if experiment == "E2" and config in ("vllm_fp16", "vllm_awq"):
         (d / "quality_summary.json").write_text(json.dumps(
             {"config_name": config, "correctness_mean": 4.1 if config == "vllm_fp16" else 3.9}))
@@ -59,13 +60,21 @@ def test_aggregate_and_plots(tmp_path, monkeypatch):
     rng = np.random.default_rng(0)
     for exp, cfg, levels, speed, sat in FAKE:
         write_run(tmp_path, exp, cfg, levels, speed, sat, rng)
+    # an interrupted attempt of the same configuration must not be counted
+    write_run(tmp_path / "interrupted", "E2", "vllm_fp16", [16], 40, 64, rng)
+    (tmp_path / "interrupted" / "x_E2_vllm_fp16").rename(tmp_path / "y_E2_vllm_fp16")
+    (tmp_path / "y_E2_vllm_fp16" / "DONE").unlink()
+    (tmp_path / "interrupted").rmdir()
     summary = aggregate(tmp_path)
     row = summary[(summary["config_name"] == "vllm_fp16") & (summary["experiment"] == "E2")
                   & (summary["concurrency"] == 16)].iloc[0]
     assert row["repeats"] == 3
     assert row["gpu_mem_peak_mib"] == 15000 + 1600
     assert 0 < row["error_rate"] < 1  # one timeout per repeat at c=16
-    assert (tmp_path / "summary_repeats.csv").exists()
+    repeats = pd.read_csv(tmp_path / "summary_repeats.csv")
+    c16 = repeats[(repeats["experiment"] == "E2") & (repeats["config_name"] == "vllm_fp16")
+                  & (repeats["concurrency"] == 16)]
+    assert len(c16) == 3  # 3 repeats of the finished run; the unfinished one is skipped
     hf = summary[(summary["config_name"] == "hf_fp16") & (summary["experiment"] == "E2")
                  & (summary["concurrency"] <= 4)]  # c=16 has an injected timeout
     assert hf["throughput_tok_s"].nunique() == 1  # sequential server: flat throughput

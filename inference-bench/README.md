@@ -87,6 +87,18 @@ python -m bench.load_gen --base-url http://localhost:11434/v1 --model qwen2.5:3b
     --prompts ../prompts/medical_rag_prompts.jsonl --concurrency 2 --num-prompts 10
 ```
 
+### Google Colab (L4)
+
+[colab/run_benchmark.ipynb](colab/run_benchmark.ipynb) runs E1–E4 on a Colab Pro L4 runtime: it checks
+the GPU and driver, clones this repository, installs vLLM / Ollama / the HF baseline, pre-downloads the
+weights, runs each configuration and copies it to Google Drive as soon as it finishes. Re-running a cell
+skips configurations already finished on Drive, so the ~9–10 GPU hours can be spread over several sessions;
+an interrupted configuration is re-run from the start and its partial copy is ignored by `analysis.aggregate`
+(only runs with a `DONE` file count). E5 (TGI) needs Docker and is not run on Colab.
+
+Each measured phase is capped by `max_duration_s` (E1 600 s, E2 300 s, HF in E2 240 s) so the whole plan fits
+the budget; the closed loop stops sending new requests at the cap and lets in-flight ones finish.
+
 ### Google Cloud checklist
 
 1. Request L4 GPU quota for the region on day one (can take 1–2 days); add a budget alert.

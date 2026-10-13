@@ -1,0 +1,21 @@
+experiment: E3
+backend: ollama
+config_name: ollama_q4_k_m
+base_url: http://localhost:11434/v1
+model: qwen2.5:7b-instruct-q4_K_M
+quantization: gguf-q4_k_m
+server_command: bash servers/start_ollama.sh
+health_url: http://localhost:11434/api/version
+concurrency:
+- 16
+repeats: 1
+num_prompts: 100
+warmup_requests: 10
+max_tokens: 256
+temperature: 0
+prompts: ../prompts/medical_rag_prompts.jsonl
+tokenizer: Qwen/Qwen2.5-7B-Instruct
+timeout_s: 600
+seed: 0
+notes: run `ollama pull qwen2.5:7b-instruct-q4_K_M` first; llama.cpp reuses a slot's cached prompt prefix
+max_duration_s: 900

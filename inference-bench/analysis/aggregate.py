@@ -83,9 +83,14 @@ def summarise_run(run_dir: Path) -> list[dict]:
     return rows
 
 
-def aggregate(results_dir: Path) -> pd.DataFrame:
+def aggregate(results_dir: Path, include_incomplete: bool = False) -> pd.DataFrame:
+    """Only finished runs (a DONE file) count, so a configuration that was interrupted and
+    then re-run is not counted twice."""
     rows = []
     for run_dir in sorted(p for p in results_dir.iterdir() if (p / "phases.csv").exists()):
+        if not include_incomplete and not (run_dir / "DONE").exists():
+            print(f"skipping unfinished run {run_dir.name}")
+            continue
         rows += summarise_run(run_dir)
     if not rows:
         raise SystemExit(f"no completed runs under {results_dir}")
@@ -102,8 +107,10 @@ def aggregate(results_dir: Path) -> pd.DataFrame:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--results", type=Path, default=BENCH_ROOT / "results")
+    ap.add_argument("--include-incomplete", action="store_true",
+                    help="also use runs that stopped before finishing (no DONE file)")
     args = ap.parse_args()
-    summary = aggregate(args.results)
+    summary = aggregate(args.results, args.include_incomplete)
     cols = ["experiment", "config_name", "concurrency", "throughput_tok_s", "ttft_p95_ms",
             "tpot_p50_ms", "e2e_p95_ms", "error_rate", "repeats"]
     print(summary[[c for c in cols if c in summary]].to_string(index=False))

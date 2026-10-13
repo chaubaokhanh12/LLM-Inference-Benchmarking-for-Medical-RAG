@@ -76,7 +76,6 @@ def run(cfg: BenchConfig, config_path: Path, run_id: str | None = None) -> Path:
                        cfg.server_startup_timeout_s):
         (out / "env.json").write_text(json.dumps(env_info.collect(cfg), indent=2), encoding="utf-8")
         with GpuMonitor(out / "gpu.csv"), MetricsPoller(cfg.metrics_url, out / "vllm_metrics.csv"):
-            phases = []
             for concurrency in cfg.concurrency:
                 for repeat in range(1, cfg.repeats + 1):
                     reset_prefix_cache(cfg.reset_prefix_cache_url)
@@ -94,17 +93,25 @@ def run(cfg: BenchConfig, config_path: Path, run_id: str | None = None) -> Path:
                             f.write(json.dumps({"prompt_id": r.prompt_id, "concurrency": concurrency,
                                                 "repeat": repeat, "text": r.text, "error": r.error},
                                                ensure_ascii=False) + "\n")
-                    phases.append({**ident, "concurrency": concurrency, "repeat": repeat,
-                                   "t_start": round(start, 3), "t_end": round(start + wall, 3),
-                                   "wall_s": round(wall, 3)})
+                    # written after every phase, so an interrupted run keeps what it measured
+                    append_phase(out / "phases.csv", {
+                        **ident, "concurrency": concurrency, "repeat": repeat,
+                        "t_start": round(start, 3), "t_end": round(start + wall, 3),
+                        "wall_s": round(wall, 3)})
                     print(f"[{cfg.config_name}] c={concurrency} rep={repeat}: "
                           f"{json.dumps(summary(records, wall))}", flush=True)
-            with open(out / "phases.csv", "w", encoding="utf-8", newline="") as f:
-                w = csv.DictWriter(f, fieldnames=list(phases[0]))
-                w.writeheader()
-                w.writerows(phases)
+    (out / "DONE").write_text(datetime.now().isoformat(timespec="seconds") + "\n", encoding="utf-8")
     print(f"results in {out}")
     return out
+
+
+def append_phase(path: Path, row: dict) -> None:
+    new = not path.exists()
+    with open(path, "a", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(row))
+        if new:
+            w.writeheader()
+        w.writerow(row)
 
 
 def main() -> None:

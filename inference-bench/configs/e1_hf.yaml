@@ -16,5 +16,5 @@ temperature: 0
 prompts: ../prompts/medical_rag_prompts.jsonl
 tokenizer: Qwen/Qwen2.5-7B-Instruct
 timeout_s: 900
-max_duration_s: 900
+max_duration_s: 600
 seed: 0

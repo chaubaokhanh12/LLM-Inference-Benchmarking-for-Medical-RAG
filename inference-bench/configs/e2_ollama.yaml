@@ -22,3 +22,4 @@ tokenizer: Qwen/Qwen2.5-7B-Instruct
 timeout_s: 600
 seed: 0
 notes: run `ollama pull qwen2.5:7b-instruct-q4_K_M` first; llama.cpp reuses a slot's cached prompt prefix
+max_duration_s: 300
