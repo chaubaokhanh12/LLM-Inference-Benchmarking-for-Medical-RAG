@@ -1,0 +1,20 @@
+experiment: E5
+backend: tgi
+config_name: tgi_fp16
+base_url: http://localhost:8002/v1
+model: tgi
+quantization: fp16
+server_command: bash servers/start_tgi.sh Qwen/Qwen2.5-7B-Instruct
+health_url: http://localhost:8002/health
+concurrency:
+- 1
+- 16
+repeats: 3
+num_prompts: 160
+warmup_requests: 10
+max_tokens: 256
+temperature: 0
+prompts: ../prompts/medical_rag_prompts.jsonl
+tokenizer: Qwen/Qwen2.5-7B-Instruct
+timeout_s: 300
+seed: 0

@@ -1,0 +1,9 @@
+# Ollama variant of qwen2.5:3b for this project:   ollama create medrag-qwen2.5-3b -f docker/ollama/Modelfile
+#
+# num_ctx: Ollama silently drops the start of prompts longer than its context (the system prompt
+#          first). RAG prompts here are up to ~3.8k tokens + 256 output tokens.
+# num_gpu: layers offloaded to the GPU. On a 4 GB card the embedder + reranker already hold ~2 GB,
+#          so only part of the 36 layers fit; the rest run on the CPU. Raise it on a bigger GPU.
+FROM qwen2.5:3b
+PARAMETER num_ctx 6144
+PARAMETER num_gpu 24

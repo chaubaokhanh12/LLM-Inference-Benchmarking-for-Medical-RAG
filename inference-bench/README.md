@@ -1,0 +1,101 @@
+# LLM Inference Benchmark on a Medical RAG Workload
+
+How much faster is vLLM than plain Hugging Face Transformers or Ollama for the prompts a
+medical RAG system actually sends — long inputs (1–3k tokens of retrieved passages), short
+answers (≤256 tokens)? This project serves one open model with each engine, replays the same
+prompts at 1–32 concurrent users, and explains the differences with GPU and KV-cache data.
+
+> **Status:** harness implemented and smoke-tested locally against Ollama. The GPU runs (L4)
+> are pending; results and figures will be filled in below.
+
+## Questions
+
+| # | Question | Experiment |
+| --- | --- | --- |
+| Q1 | At one user, how much faster is vLLM than HF Transformers and Ollama? | E1 |
+| Q2 | From 1 to 32 concurrent users, how do latency and throughput change? | E2 |
+| Q3 | What does AWQ 4-bit save in memory, and what does it cost in speed and quality? | E3 |
+| Q4 | How much TTFT does prefix caching save with the RAG system prompt? | E4 |
+| Q5 | Why? (batching, KV cache, GPU utilisation) | profiling |
+
+## Workload
+
+`../prompts/medical_rag_prompts.jsonl`, exported by [medical-rag](../medical-rag/): one line
+per evaluation question with the exact chat messages (fixed system prompt + top-5 reranked
+passages + question), Vietnamese and English mixed. Retrieval is not part of the benchmark;
+every engine gets byte-identical inputs. `prompts/stats.json` has the input-length
+distribution.
+
+## Setup (fixed)
+
+| | |
+| --- | --- |
+| GPU | 1× NVIDIA L4 24 GB |
+| Model | Qwen2.5-7B-Instruct — FP16, official AWQ, GGUF Q4_K_M (Ollama) |
+| Context | `max_model_len = 4096`; `max_tokens = 256`, `temperature = 0` |
+| Repeats | 3 per configuration (median reported), 10 warm-up requests first |
+
+## How it works
+
+```
+configs/e2_vllm_fp16.yaml ─► bench.run ─► start server ─► wait for /health
+                                       ├─► env.json, command.txt
+                                       ├─► for each concurrency × repeat:
+                                       │     warm-up → closed-loop load (bench.load_gen)
+                                       │     + nvidia-smi sampler + vLLM /metrics poller
+                                       └─► results/<run_id>/{requests,phases,gpu,vllm_metrics}.csv
+analysis.aggregate ─► results/summary.csv   (median over repeats)
+analysis.plots     ─► results/plots/*.png
+bench.quality_eval ─► quality_summary.json (LLM judge: faithfulness, correctness)
+```
+
+- **Closed loop:** N workers each send the next request as soon as the previous one returns;
+  N is the number of concurrent users.
+- **Timing:** every request streams. TTFT = first content chunk − send; TPOT =
+  (e2e − TTFT) / (output tokens − 1) is the main decode metric (a chunk can hold several
+  tokens, so inter-chunk gaps are only indicative). Token counts come from the server's
+  `usage`, or the model tokenizer when a server does not report it.
+- **HF baseline** ([servers/hf_server.py](servers/hf_server.py)): a minimal OpenAI-compatible
+  FastAPI server that generates one request at a time — the naive way to serve a model.
+
+### Fair comparison
+
+- Ollama runs a 4-bit GGUF, so it is compared with **vLLM AWQ** (also 4-bit), not FP16.
+- E1–E3 run vLLM with prefix caching **off** (`--no-enable-prefix-caching`), so a repeated
+  prompt cannot hit a cache filled by the previous repeat; only E4 turns it on, and resets the
+  cache (`/reset_prefix_cache`, `VLLM_SERVER_DEV_MODE=1`) before each repeat. Warm-up prompts
+  share only the system prompt with the measured ones. llama.cpp (Ollama) reuses a slot's
+  prompt prefix and cannot be switched off — noted in the results.
+- Ollama is started with `OLLAMA_NUM_PARALLEL=32` and `OLLAMA_CONTEXT_LENGTH=4096`; its
+  defaults (few parallel slots, short context) would distort the comparison.
+- Server flags change between versions: each run stores the exact command and library
+  versions (`command.txt`, `env.json`).
+
+## Run
+
+```bash
+pip install -e ".[hf,dev]"     # on the GPU VM also: pip install vllm
+python -m bench.run configs/e1_vllm_fp16.yaml      # one experiment configuration
+python -m bench.quality_eval results/<fp16_run> results/<awq_run>   # E3 quality (OPENAI_API_KEY)
+python -m analysis.aggregate && python -m analysis.plots
+```
+
+Local smoke test (any OpenAI-compatible server already running, e.g. Ollama):
+
+```bash
+python -m bench.load_gen --base-url http://localhost:11434/v1 --model qwen2.5:3b \
+    --prompts ../prompts/medical_rag_prompts.jsonl --concurrency 2 --num-prompts 10
+```
+
+### Google Cloud checklist
+
+1. Request L4 GPU quota for the region on day one (can take 1–2 days); add a budget alert.
+2. VM with a Deep Learning image (driver + CUDA included), disk ≥ 100 GB.
+3. Pre-download weights: `huggingface-cli download Qwen/Qwen2.5-7B-Instruct` (and `-AWQ`);
+   `ollama pull qwen2.5:7b-instruct-q4_K_M`.
+4. Run inside `tmux`; copy `results/` off the VM and **stop the VM** after each session.
+   Budget ≈ 10–15 GPU hours.
+
+## Results
+
+_Pending GPU runs._

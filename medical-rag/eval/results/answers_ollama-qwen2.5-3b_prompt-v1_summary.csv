@@ -1,0 +1,35 @@
+metric,group,value,ci_low,ci_high,n
+faithfulness,answerable/all,0.9754,0.9542,0.9925,100
+relevance (1-5),answerable/all,4.98,4.95,5.0,100
+correctness (1-5),answerable/all,4.78,4.6697,4.88,100
+language match,answerable/all,1.0,1.0,1.0,100
+has valid citation,answerable/all,0.33,0.24,0.42,100
+cites missing passage,answerable/all,0.0,0.0,0.0,100
+abstained (bad),answerable/all,0.0,0.0,0.0,100
+gold chunk in context,answerable/all,1.0,1.0,1.0,100
+faithfulness,answerable/en,0.9888,0.9738,1.0,50
+relevance (1-5),answerable/en,5.0,5.0,5.0,50
+correctness (1-5),answerable/en,4.94,4.86,5.0,50
+language match,answerable/en,1.0,1.0,1.0,50
+has valid citation,answerable/en,0.36,0.22,0.5,50
+cites missing passage,answerable/en,0.0,0.0,0.0,50
+abstained (bad),answerable/en,0.0,0.0,0.0,50
+gold chunk in context,answerable/en,1.0,1.0,1.0,50
+faithfulness,answerable/vi,0.962,0.922,0.99,50
+relevance (1-5),answerable/vi,4.96,4.9,5.0,50
+correctness (1-5),answerable/vi,4.62,4.4,4.8,50
+language match,answerable/vi,1.0,1.0,1.0,50
+has valid citation,answerable/vi,0.3,0.18,0.42,50
+cites missing passage,answerable/vi,0.0,0.0,0.0,50
+abstained (bad),answerable/vi,0.0,0.0,0.0,50
+gold chunk in context,answerable/vi,1.0,1.0,1.0,50
+faithfulness,crosslingual,0.9349,0.8568,0.9896,32
+relevance (1-5),crosslingual,3.925,3.4,4.4,40
+correctness (1-5),crosslingual,3.425,2.925,3.9,40
+language match,crosslingual,0.95,0.875,1.0,40
+has valid citation,crosslingual,0.5312,0.3742,0.7188,32
+cites missing passage,crosslingual,0.0,0.0,0.0,40
+abstained (bad),crosslingual,0.2,0.075,0.325,40
+gold chunk in context,crosslingual,0.3,0.1744,0.45,40
+abstained (good),unanswerable,0.9,0.8,0.98,50
+language match,unanswerable,0.96,0.9,1.0,50

@@ -1,0 +1,34 @@
+# Local vLLM server (OpenAI-compatible, port 8000) for development on a small GPU.
+#
+#   docker compose -f docker/vllm-compose.yml up -d
+#   curl http://localhost:8000/v1/models
+#
+# Defaults fit a 4 GB laptop GPU next to the embedding model and reranker:
+# a 4-bit 1.5B model, at most 45% of VRAM, no CUDA graphs (--enforce-eager saves memory).
+# Real benchmark numbers come from a larger GPU (see docs/llm_benchmark_spec.md).
+#
+# Then in medical-rag/.env:
+#   LLM_BACKEND=vllm
+#   LLM_MODEL=qwen2.5-1.5b-awq        # = --served-model-name
+#   LLM_BASE_URL=http://localhost:8000/v1
+services:
+  vllm:
+    image: vllm/vllm-openai:${VLLM_VERSION:-v0.31.0}
+    command:
+      - --model=${VLLM_MODEL:-Qwen/Qwen2.5-1.5B-Instruct-AWQ}
+      - --served-model-name=${VLLM_SERVED_NAME:-qwen2.5-1.5b-awq}
+      - --max-model-len=4096
+      - --gpu-memory-utilization=${VLLM_GPU_UTIL:-0.45}
+      - --enforce-eager
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${USERPROFILE:-~}/.cache/huggingface:/root/.cache/huggingface
+    ipc: host
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

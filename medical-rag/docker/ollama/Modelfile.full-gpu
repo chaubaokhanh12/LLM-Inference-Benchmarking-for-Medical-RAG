@@ -1,0 +1,5 @@
+# Same model with every layer on the GPU, for runs where the LLM has the GPU to itself
+# (two-phase evaluation, or retrieval models on another device).
+#   ollama create medrag-qwen2.5-3b-gpu -f docker/ollama/Modelfile.full-gpu
+FROM qwen2.5:3b
+PARAMETER num_ctx 6144

@@ -1,0 +1,264 @@
+# Corpus candidates (English Wikipedia titles). Vietnamese articles are found via langlinks.
+# Infectious diseases
+Dengue fever
+Malaria
+Tuberculosis
+Hepatitis A
+Hepatitis B
+Hepatitis C
+HIV/AIDS
+Influenza
+COVID-19
+Measles
+Chickenpox
+Shingles
+Hand, foot, and mouth disease
+Japanese encephalitis
+Rabies
+Typhoid fever
+Cholera
+Tetanus
+Diphtheria
+Whooping cough
+Mumps
+Rubella
+Pneumonia
+Meningitis
+Sepsis
+Urinary tract infection
+Syphilis
+Gonorrhea
+Chlamydia
+Herpes simplex
+Human papillomavirus infection
+Zika fever
+Leptospirosis
+Melioidosis
+Scrub typhus
+Helicobacter pylori
+Ascariasis
+Hookworm infection
+Common cold
+Conjunctivitis
+Otitis media
+Tonsillitis
+Cellulitis
+Impetigo
+Gastroenteritis
+# Cardiovascular
+Hypertension
+Coronary artery disease
+Myocardial infarction
+Heart failure
+Atrial fibrillation
+Stroke
+Atherosclerosis
+Deep vein thrombosis
+Pulmonary embolism
+Hyperlipidemia
+Rheumatic fever
+Varicose veins
+Angina
+# Respiratory
+Asthma
+Chronic obstructive pulmonary disease
+Bronchitis
+Lung cancer
+Pneumothorax
+Sleep apnea
+Allergic rhinitis
+Sinusitis
+# Digestive
+Gastroesophageal reflux disease
+Peptic ulcer disease
+Gastritis
+Appendicitis
+Irritable bowel syndrome
+Crohn's disease
+Ulcerative colitis
+Cirrhosis
+Non-alcoholic fatty liver disease
+Gallstone
+Pancreatitis
+Hemorrhoid
+Constipation
+Diarrhea
+Celiac disease
+Colorectal cancer
+Stomach cancer
+Hepatocellular carcinoma
+Esophageal cancer
+# Endocrine and metabolic
+Diabetes
+Type 1 diabetes
+Type 2 diabetes
+Hypothyroidism
+Hyperthyroidism
+Graves' disease
+Obesity
+Gout
+Osteoporosis
+Metabolic syndrome
+Hypoglycemia
+Diabetic ketoacidosis
+# Kidney
+Chronic kidney disease
+Acute kidney injury
+Kidney stone disease
+Nephrotic syndrome
+Glomerulonephritis
+# Nervous system
+Migraine
+Epilepsy
+Alzheimer's disease
+Parkinson's disease
+Multiple sclerosis
+Dementia
+Headache
+Tension headache
+Concussion
+Vertigo
+Insomnia
+# Mental health
+Major depressive disorder
+Generalized anxiety disorder
+Bipolar disorder
+Schizophrenia
+Attention deficit hyperactivity disorder
+Autism
+Post-traumatic stress disorder
+Obsessive–compulsive disorder
+Anorexia nervosa
+Alcoholism
+# Musculoskeletal
+Rheumatoid arthritis
+Osteoarthritis
+Systemic lupus erythematosus
+Low back pain
+Ankylosing spondylitis
+Carpal tunnel syndrome
+Scoliosis
+# Cancer
+Breast cancer
+Cervical cancer
+Prostate cancer
+Leukemia
+Lymphoma
+Thyroid cancer
+Nasopharyngeal carcinoma
+Melanoma
+Ovarian cancer
+Pancreatic cancer
+# Blood
+Anemia
+Iron-deficiency anemia
+Thalassemia
+Sickle cell disease
+Thrombocytopenia
+# Skin
+Psoriasis
+Atopic dermatitis
+Acne
+Hives
+Vitiligo
+Dermatophytosis
+Rosacea
+# Eye and ear
+Cataract
+Glaucoma
+Myopia
+Diabetic retinopathy
+Hearing loss
+Tinnitus
+# Women's and children's health
+Pre-eclampsia
+Gestational diabetes
+Neonatal jaundice
+Rickets
+Malnutrition
+Down syndrome
+Polycystic ovary syndrome
+Endometriosis
+Menopause
+Infertility
+Breastfeeding
+# Symptoms
+Fever
+Cough
+Chest pain
+Abdominal pain
+Fatigue
+Nausea
+Shortness of breath
+Edema
+Syncope (medicine)
+Jaundice
+Itch
+# Drugs
+Paracetamol
+Ibuprofen
+Aspirin
+Amoxicillin
+Amoxicillin/clavulanic acid
+Penicillin
+Azithromycin
+Ciprofloxacin
+Doxycycline
+Ceftriaxone
+Cefuroxime
+Metronidazole
+Vancomycin
+Metformin
+Insulin (medication)
+Gliclazide
+Glibenclamide
+Atorvastatin
+Simvastatin
+Amlodipine
+Nifedipine
+Losartan
+Enalapril
+Captopril
+Bisoprolol
+Furosemide
+Hydrochlorothiazide
+Spironolactone
+Clopidogrel
+Warfarin
+Heparin
+Omeprazole
+Esomeprazole
+Domperidone
+Loperamide
+Salbutamol
+Prednisone
+Dexamethasone
+Cetirizine
+Loratadine
+Diclofenac
+Levothyroxine
+Diazepam
+Morphine
+Tramadol
+Oseltamivir
+Aciclovir
+Fluconazole
+Albendazole
+Ivermectin
+Artemisinin
+Isoniazid
+Rifampicin
+Tenofovir disoproxil
+Sertraline
+Fluoxetine
+Vitamin D
+Oral rehydration therapy
+# Concepts and procedures
+Vaccination
+Antimicrobial resistance
+Blood pressure
+Body mass index
+Cholesterol
+Glycated hemoglobin
+Kidney dialysis
+Chemotherapy

@@ -1,0 +1,3152 @@
+[
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Aciclovir",
+  "revid": 1376498922,
+  "topic_en": "Aciclovir",
+  "n_chars": 11798,
+  "file": "data/raw/wikipedia/en/aciclovir.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Acne",
+  "revid": 1378640167,
+  "topic_en": "Acne",
+  "n_chars": 64065,
+  "file": "data/raw/wikipedia/en/acne.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Albendazole",
+  "revid": 1335702995,
+  "topic_en": "Albendazole",
+  "n_chars": 25482,
+  "file": "data/raw/wikipedia/en/albendazole.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Alcoholism",
+  "revid": 1376751149,
+  "topic_en": "Alcoholism",
+  "n_chars": 56794,
+  "file": "data/raw/wikipedia/en/alcoholism.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Allergic rhinitis",
+  "revid": 1360368238,
+  "topic_en": "Allergic rhinitis",
+  "n_chars": 27099,
+  "file": "data/raw/wikipedia/en/allergic_rhinitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Amoxicillin",
+  "revid": 1379765084,
+  "topic_en": "Amoxicillin",
+  "n_chars": 12907,
+  "file": "data/raw/wikipedia/en/amoxicillin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Amoxicillin/clavulanic acid",
+  "revid": 1379486015,
+  "topic_en": "Amoxicillin/clavulanic acid",
+  "n_chars": 9706,
+  "file": "data/raw/wikipedia/en/amoxicillin_clavulanic_acid.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Anemia",
+  "revid": 1378733880,
+  "topic_en": "Anemia",
+  "n_chars": 27047,
+  "file": "data/raw/wikipedia/en/anemia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Angina",
+  "revid": 1374806441,
+  "topic_en": "Angina",
+  "n_chars": 26129,
+  "file": "data/raw/wikipedia/en/angina.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Ankylosing spondylitis",
+  "revid": 1379468483,
+  "topic_en": "Ankylosing spondylitis",
+  "n_chars": 24445,
+  "file": "data/raw/wikipedia/en/ankylosing_spondylitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Appendicitis",
+  "revid": 1378385335,
+  "topic_en": "Appendicitis",
+  "n_chars": 34315,
+  "file": "data/raw/wikipedia/en/appendicitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Artemisinin",
+  "revid": 1378911221,
+  "topic_en": "Artemisinin",
+  "n_chars": 24853,
+  "file": "data/raw/wikipedia/en/artemisinin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Ascariasis",
+  "revid": 1367018367,
+  "topic_en": "Ascariasis",
+  "n_chars": 11329,
+  "file": "data/raw/wikipedia/en/ascariasis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Aspirin",
+  "revid": 1378675444,
+  "topic_en": "Aspirin",
+  "n_chars": 55325,
+  "file": "data/raw/wikipedia/en/aspirin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Atherosclerosis",
+  "revid": 1374385220,
+  "topic_en": "Atherosclerosis",
+  "n_chars": 41494,
+  "file": "data/raw/wikipedia/en/atherosclerosis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Atopic dermatitis",
+  "revid": 1364329717,
+  "topic_en": "Atopic dermatitis",
+  "n_chars": 28163,
+  "file": "data/raw/wikipedia/en/atopic_dermatitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Atorvastatin",
+  "revid": 1377155543,
+  "topic_en": "Atorvastatin",
+  "n_chars": 27259,
+  "file": "data/raw/wikipedia/en/atorvastatin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Atrial fibrillation",
+  "revid": 1368934457,
+  "topic_en": "Atrial fibrillation",
+  "n_chars": 55721,
+  "file": "data/raw/wikipedia/en/atrial_fibrillation.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Attention deficit hyperactivity disorder",
+  "revid": 1379841019,
+  "topic_en": "Attention deficit hyperactivity disorder",
+  "n_chars": 87869,
+  "file": "data/raw/wikipedia/en/attention_deficit_hyperactivity_disorder.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Autism",
+  "revid": 1379846049,
+  "topic_en": "Autism",
+  "n_chars": 59535,
+  "file": "data/raw/wikipedia/en/autism.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Azithromycin",
+  "revid": 1367373742,
+  "topic_en": "Azithromycin",
+  "n_chars": 17678,
+  "file": "data/raw/wikipedia/en/azithromycin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Bipolar disorder",
+  "revid": 1376035662,
+  "topic_en": "Bipolar disorder",
+  "n_chars": 63993,
+  "file": "data/raw/wikipedia/en/bipolar_disorder.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Bisoprolol",
+  "revid": 1356470142,
+  "topic_en": "Bisoprolol",
+  "n_chars": 6885,
+  "file": "data/raw/wikipedia/en/bisoprolol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Blood pressure",
+  "revid": 1379381701,
+  "topic_en": "Blood pressure",
+  "n_chars": 32016,
+  "file": "data/raw/wikipedia/en/blood_pressure.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Body mass index",
+  "revid": 1376546283,
+  "topic_en": "Body mass index",
+  "n_chars": 28252,
+  "file": "data/raw/wikipedia/en/body_mass_index.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Bronchitis",
+  "revid": 1375661282,
+  "topic_en": "Bronchitis",
+  "n_chars": 16612,
+  "file": "data/raw/wikipedia/en/bronchitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "COVID-19",
+  "revid": 1378764871,
+  "topic_en": "COVID-19",
+  "n_chars": 86236,
+  "file": "data/raw/wikipedia/en/covid_19.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Captopril",
+  "revid": 1342731597,
+  "topic_en": "Captopril",
+  "n_chars": 7588,
+  "file": "data/raw/wikipedia/en/captopril.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Cataract",
+  "revid": 1378045796,
+  "topic_en": "Cataract",
+  "n_chars": 19081,
+  "file": "data/raw/wikipedia/en/cataract.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Cefuroxime",
+  "revid": 1352009481,
+  "topic_en": "Cefuroxime",
+  "n_chars": 3688,
+  "file": "data/raw/wikipedia/en/cefuroxime.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Cetirizine",
+  "revid": 1377390353,
+  "topic_en": "Cetirizine",
+  "n_chars": 11331,
+  "file": "data/raw/wikipedia/en/cetirizine.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Chest pain",
+  "revid": 1371228320,
+  "topic_en": "Chest pain",
+  "n_chars": 33293,
+  "file": "data/raw/wikipedia/en/chest_pain.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Chickenpox",
+  "revid": 1378562373,
+  "topic_en": "Chickenpox",
+  "n_chars": 21074,
+  "file": "data/raw/wikipedia/en/chickenpox.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Chlamydia",
+  "revid": 1376278429,
+  "topic_en": "Chlamydia",
+  "n_chars": 15094,
+  "file": "data/raw/wikipedia/en/chlamydia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Cholera",
+  "revid": 1379078675,
+  "topic_en": "Cholera",
+  "n_chars": 42722,
+  "file": "data/raw/wikipedia/en/cholera.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Cholesterol",
+  "revid": 1376435256,
+  "topic_en": "Cholesterol",
+  "n_chars": 30688,
+  "file": "data/raw/wikipedia/en/cholesterol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Chronic obstructive pulmonary disease",
+  "revid": 1378640209,
+  "topic_en": "Chronic obstructive pulmonary disease",
+  "n_chars": 78177,
+  "file": "data/raw/wikipedia/en/chronic_obstructive_pulmonary_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Ciprofloxacin",
+  "revid": 1358476040,
+  "topic_en": "Ciprofloxacin",
+  "n_chars": 20722,
+  "file": "data/raw/wikipedia/en/ciprofloxacin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Clopidogrel",
+  "revid": 1356288019,
+  "topic_en": "Clopidogrel",
+  "n_chars": 11743,
+  "file": "data/raw/wikipedia/en/clopidogrel.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Coeliac disease",
+  "revid": 1378883597,
+  "topic_en": "Coeliac disease",
+  "n_chars": 40337,
+  "file": "data/raw/wikipedia/en/coeliac_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Concussion",
+  "revid": 1369632392,
+  "topic_en": "Concussion",
+  "n_chars": 44707,
+  "file": "data/raw/wikipedia/en/concussion.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Conjunctivitis",
+  "revid": 1370001614,
+  "topic_en": "Conjunctivitis",
+  "n_chars": 16041,
+  "file": "data/raw/wikipedia/en/conjunctivitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Cough",
+  "revid": 1379815941,
+  "topic_en": "Cough",
+  "n_chars": 13262,
+  "file": "data/raw/wikipedia/en/cough.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Crohn's disease",
+  "revid": 1375763171,
+  "topic_en": "Crohn's disease",
+  "n_chars": 60727,
+  "file": "data/raw/wikipedia/en/crohn_s_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Dengue fever",
+  "revid": 1379108025,
+  "topic_en": "Dengue fever",
+  "n_chars": 24622,
+  "file": "data/raw/wikipedia/en/dengue_fever.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Dexamethasone",
+  "revid": 1379161163,
+  "topic_en": "Dexamethasone",
+  "n_chars": 20041,
+  "file": "data/raw/wikipedia/en/dexamethasone.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Diabetic retinopathy",
+  "revid": 1378621392,
+  "topic_en": "Diabetic retinopathy",
+  "n_chars": 24654,
+  "file": "data/raw/wikipedia/en/diabetic_retinopathy.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Diazepam",
+  "revid": 1376693592,
+  "topic_en": "Diazepam",
+  "n_chars": 34278,
+  "file": "data/raw/wikipedia/en/diazepam.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Diphtheria",
+  "revid": 1379151211,
+  "topic_en": "Diphtheria",
+  "n_chars": 25237,
+  "file": "data/raw/wikipedia/en/diphtheria.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Down syndrome",
+  "revid": 1379837597,
+  "topic_en": "Down syndrome",
+  "n_chars": 42767,
+  "file": "data/raw/wikipedia/en/down_syndrome.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Doxycycline",
+  "revid": 1377571488,
+  "topic_en": "Doxycycline",
+  "n_chars": 31646,
+  "file": "data/raw/wikipedia/en/doxycycline.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Edema",
+  "revid": 1378214313,
+  "topic_en": "Edema",
+  "n_chars": 15993,
+  "file": "data/raw/wikipedia/en/edema.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Epilepsy",
+  "revid": 1379740532,
+  "topic_en": "Epilepsy",
+  "n_chars": 62706,
+  "file": "data/raw/wikipedia/en/epilepsy.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Esomeprazole",
+  "revid": 1363159768,
+  "topic_en": "Esomeprazole",
+  "n_chars": 7810,
+  "file": "data/raw/wikipedia/en/esomeprazole.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Fatigue",
+  "revid": 1376908358,
+  "topic_en": "Fatigue",
+  "n_chars": 24671,
+  "file": "data/raw/wikipedia/en/fatigue.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Fluconazole",
+  "revid": 1378383477,
+  "topic_en": "Fluconazole",
+  "n_chars": 9649,
+  "file": "data/raw/wikipedia/en/fluconazole.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Fluoxetine",
+  "revid": 1379576704,
+  "topic_en": "Fluoxetine",
+  "n_chars": 30110,
+  "file": "data/raw/wikipedia/en/fluoxetine.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Furosemide",
+  "revid": 1379084972,
+  "topic_en": "Furosemide",
+  "n_chars": 12079,
+  "file": "data/raw/wikipedia/en/furosemide.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Gallstone",
+  "revid": 1375556685,
+  "topic_en": "Gallstone",
+  "n_chars": 17678,
+  "file": "data/raw/wikipedia/en/gallstone.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Gastroesophageal reflux disease",
+  "revid": 1378866218,
+  "topic_en": "Gastroesophageal reflux disease",
+  "n_chars": 20900,
+  "file": "data/raw/wikipedia/en/gastroesophageal_reflux_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Generalized anxiety disorder",
+  "revid": 1374143360,
+  "topic_en": "Generalized anxiety disorder",
+  "n_chars": 43539,
+  "file": "data/raw/wikipedia/en/generalized_anxiety_disorder.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Gliclazide",
+  "revid": 1337490079,
+  "topic_en": "Gliclazide",
+  "n_chars": 4330,
+  "file": "data/raw/wikipedia/en/gliclazide.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Glomerulonephritis",
+  "revid": 1319007236,
+  "topic_en": "Glomerulonephritis",
+  "n_chars": 13383,
+  "file": "data/raw/wikipedia/en/glomerulonephritis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Glycated hemoglobin",
+  "revid": 1375977541,
+  "topic_en": "Glycated hemoglobin",
+  "n_chars": 21440,
+  "file": "data/raw/wikipedia/en/glycated_hemoglobin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Headache",
+  "revid": 1373929303,
+  "topic_en": "Headache",
+  "n_chars": 38927,
+  "file": "data/raw/wikipedia/en/headache.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hearing loss",
+  "revid": 1379804100,
+  "topic_en": "Hearing loss",
+  "n_chars": 39418,
+  "file": "data/raw/wikipedia/en/hearing_loss.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Helicobacter pylori",
+  "revid": 1379295201,
+  "topic_en": "Helicobacter pylori",
+  "n_chars": 53655,
+  "file": "data/raw/wikipedia/en/helicobacter_pylori.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hepatitis A",
+  "revid": 1371710943,
+  "topic_en": "Hepatitis A",
+  "n_chars": 15996,
+  "file": "data/raw/wikipedia/en/hepatitis_a.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hepatitis B",
+  "revid": 1379699853,
+  "topic_en": "Hepatitis B",
+  "n_chars": 33347,
+  "file": "data/raw/wikipedia/en/hepatitis_b.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hives",
+  "revid": 1377211599,
+  "topic_en": "Hives",
+  "n_chars": 25657,
+  "file": "data/raw/wikipedia/en/hives.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hookworm infection",
+  "revid": 1344772092,
+  "topic_en": "Hookworm infection",
+  "n_chars": 42233,
+  "file": "data/raw/wikipedia/en/hookworm_infection.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Human papillomavirus infection",
+  "revid": 1378222621,
+  "topic_en": "Human papillomavirus infection",
+  "n_chars": 49569,
+  "file": "data/raw/wikipedia/en/human_papillomavirus_infection.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hydrochlorothiazide",
+  "revid": 1378872135,
+  "topic_en": "Hydrochlorothiazide",
+  "n_chars": 7459,
+  "file": "data/raw/wikipedia/en/hydrochlorothiazide.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hyperlipidemia",
+  "revid": 1360689966,
+  "topic_en": "Hyperlipidemia",
+  "n_chars": 21498,
+  "file": "data/raw/wikipedia/en/hyperlipidemia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hypertension",
+  "revid": 1379458003,
+  "topic_en": "Hypertension",
+  "n_chars": 39012,
+  "file": "data/raw/wikipedia/en/hypertension.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hyperthyroidism",
+  "revid": 1378905467,
+  "topic_en": "Hyperthyroidism",
+  "n_chars": 29315,
+  "file": "data/raw/wikipedia/en/hyperthyroidism.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hypoglycemia",
+  "revid": 1379424768,
+  "topic_en": "Hypoglycemia",
+  "n_chars": 31329,
+  "file": "data/raw/wikipedia/en/hypoglycemia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Hypothyroidism",
+  "revid": 1378717256,
+  "topic_en": "Hypothyroidism",
+  "n_chars": 33572,
+  "file": "data/raw/wikipedia/en/hypothyroidism.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Impetigo",
+  "revid": 1378616842,
+  "topic_en": "Impetigo",
+  "n_chars": 8634,
+  "file": "data/raw/wikipedia/en/impetigo.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Infertility",
+  "revid": 1376450831,
+  "topic_en": "Infertility",
+  "n_chars": 31675,
+  "file": "data/raw/wikipedia/en/infertility.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Influenza",
+  "revid": 1369108661,
+  "topic_en": "Influenza",
+  "n_chars": 63248,
+  "file": "data/raw/wikipedia/en/influenza.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Insomnia",
+  "revid": 1378834226,
+  "topic_en": "Insomnia",
+  "n_chars": 46966,
+  "file": "data/raw/wikipedia/en/insomnia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Insulin (medication)",
+  "revid": 1379783551,
+  "topic_en": "Insulin (medication)",
+  "n_chars": 45258,
+  "file": "data/raw/wikipedia/en/insulin_medication.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Iron-deficiency anemia",
+  "revid": 1367629563,
+  "topic_en": "Iron-deficiency anemia",
+  "n_chars": 28588,
+  "file": "data/raw/wikipedia/en/iron_deficiency_anemia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Irritable bowel syndrome",
+  "revid": 1378914988,
+  "topic_en": "Irritable bowel syndrome",
+  "n_chars": 40431,
+  "file": "data/raw/wikipedia/en/irritable_bowel_syndrome.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Isoniazid",
+  "revid": 1373328078,
+  "topic_en": "Isoniazid",
+  "n_chars": 13181,
+  "file": "data/raw/wikipedia/en/isoniazid.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Itch",
+  "revid": 1377736621,
+  "topic_en": "Itch",
+  "n_chars": 14299,
+  "file": "data/raw/wikipedia/en/itch.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Kidney dialysis",
+  "revid": 1378161209,
+  "topic_en": "Kidney dialysis",
+  "n_chars": 27314,
+  "file": "data/raw/wikipedia/en/kidney_dialysis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Kidney stone disease",
+  "revid": 1379117230,
+  "topic_en": "Kidney stone disease",
+  "n_chars": 51561,
+  "file": "data/raw/wikipedia/en/kidney_stone_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Leptospirosis",
+  "revid": 1378302057,
+  "topic_en": "Leptospirosis",
+  "n_chars": 41225,
+  "file": "data/raw/wikipedia/en/leptospirosis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Leukemia",
+  "revid": 1378524078,
+  "topic_en": "Leukemia",
+  "n_chars": 32934,
+  "file": "data/raw/wikipedia/en/leukemia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Levothyroxine",
+  "revid": 1368685201,
+  "topic_en": "Levothyroxine",
+  "n_chars": 12064,
+  "file": "data/raw/wikipedia/en/levothyroxine.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Loratadine",
+  "revid": 1356896189,
+  "topic_en": "Loratadine",
+  "n_chars": 6388,
+  "file": "data/raw/wikipedia/en/loratadine.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Losartan",
+  "revid": 1361505549,
+  "topic_en": "Losartan",
+  "n_chars": 8617,
+  "file": "data/raw/wikipedia/en/losartan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Lupus",
+  "revid": 1378651337,
+  "topic_en": "Lupus",
+  "n_chars": 58093,
+  "file": "data/raw/wikipedia/en/lupus.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Major depressive disorder",
+  "revid": 1375960536,
+  "topic_en": "Major depressive disorder",
+  "n_chars": 60987,
+  "file": "data/raw/wikipedia/en/major_depressive_disorder.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Malnutrition",
+  "revid": 1374374045,
+  "topic_en": "Malnutrition",
+  "n_chars": 70400,
+  "file": "data/raw/wikipedia/en/malnutrition.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Measles",
+  "revid": 1379669516,
+  "topic_en": "Measles",
+  "n_chars": 38323,
+  "file": "data/raw/wikipedia/en/measles.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Melanoma",
+  "revid": 1378220624,
+  "topic_en": "Melanoma",
+  "n_chars": 56804,
+  "file": "data/raw/wikipedia/en/melanoma.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Melioidosis",
+  "revid": 1376798491,
+  "topic_en": "Melioidosis",
+  "n_chars": 49270,
+  "file": "data/raw/wikipedia/en/melioidosis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Meningitis",
+  "revid": 1374555530,
+  "topic_en": "Meningitis",
+  "n_chars": 42140,
+  "file": "data/raw/wikipedia/en/meningitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Menopause",
+  "revid": 1379539330,
+  "topic_en": "Menopause",
+  "n_chars": 34059,
+  "file": "data/raw/wikipedia/en/menopause.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Metabolic dysfunction–associated steatotic liver disease",
+  "revid": 1379836167,
+  "topic_en": "Metabolic dysfunction–associated steatotic liver disease",
+  "n_chars": 52441,
+  "file": "data/raw/wikipedia/en/metabolic_dysfunction_associated_steatotic_liver_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Metformin",
+  "revid": 1378760894,
+  "topic_en": "Metformin",
+  "n_chars": 29288,
+  "file": "data/raw/wikipedia/en/metformin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Metronidazole",
+  "revid": 1374900844,
+  "topic_en": "Metronidazole",
+  "n_chars": 17922,
+  "file": "data/raw/wikipedia/en/metronidazole.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Morphine",
+  "revid": 1379714314,
+  "topic_en": "Morphine",
+  "n_chars": 53244,
+  "file": "data/raw/wikipedia/en/morphine.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Myocardial infarction",
+  "revid": 1378744991,
+  "topic_en": "Myocardial infarction",
+  "n_chars": 46188,
+  "file": "data/raw/wikipedia/en/myocardial_infarction.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Myopia",
+  "revid": 1379222039,
+  "topic_en": "Myopia",
+  "n_chars": 25831,
+  "file": "data/raw/wikipedia/en/myopia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Nasopharyngeal carcinoma",
+  "revid": 1378622519,
+  "topic_en": "Nasopharyngeal carcinoma",
+  "n_chars": 14208,
+  "file": "data/raw/wikipedia/en/nasopharyngeal_carcinoma.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Neonatal jaundice",
+  "revid": 1378610789,
+  "topic_en": "Neonatal jaundice",
+  "n_chars": 21307,
+  "file": "data/raw/wikipedia/en/neonatal_jaundice.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Nephrotic syndrome",
+  "revid": 1364612737,
+  "topic_en": "Nephrotic syndrome",
+  "n_chars": 31909,
+  "file": "data/raw/wikipedia/en/nephrotic_syndrome.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Obesity",
+  "revid": 1375868100,
+  "topic_en": "Obesity",
+  "n_chars": 50273,
+  "file": "data/raw/wikipedia/en/obesity.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Omeprazole",
+  "revid": 1362259565,
+  "topic_en": "Omeprazole",
+  "n_chars": 11550,
+  "file": "data/raw/wikipedia/en/omeprazole.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Oral rehydration therapy",
+  "revid": 1372600924,
+  "topic_en": "Oral rehydration therapy",
+  "n_chars": 21022,
+  "file": "data/raw/wikipedia/en/oral_rehydration_therapy.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Osteoarthritis",
+  "revid": 1377929731,
+  "topic_en": "Osteoarthritis",
+  "n_chars": 35980,
+  "file": "data/raw/wikipedia/en/osteoarthritis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Osteoporosis",
+  "revid": 1378296263,
+  "topic_en": "Osteoporosis",
+  "n_chars": 54163,
+  "file": "data/raw/wikipedia/en/osteoporosis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Otitis media",
+  "revid": 1378637360,
+  "topic_en": "Otitis media",
+  "n_chars": 24113,
+  "file": "data/raw/wikipedia/en/otitis_media.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Pancreatic cancer",
+  "revid": 1379287937,
+  "topic_en": "Pancreatic cancer",
+  "n_chars": 54959,
+  "file": "data/raw/wikipedia/en/pancreatic_cancer.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Pancreatitis",
+  "revid": 1356537825,
+  "topic_en": "Pancreatitis",
+  "n_chars": 17804,
+  "file": "data/raw/wikipedia/en/pancreatitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Paracetamol",
+  "revid": 1377157838,
+  "topic_en": "Paracetamol",
+  "n_chars": 31464,
+  "file": "data/raw/wikipedia/en/paracetamol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Parkinson's disease",
+  "revid": 1379785536,
+  "topic_en": "Parkinson's disease",
+  "n_chars": 44485,
+  "file": "data/raw/wikipedia/en/parkinson_s_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Penicillin",
+  "revid": 1379692152,
+  "topic_en": "Penicillin",
+  "n_chars": 42668,
+  "file": "data/raw/wikipedia/en/penicillin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Peptic ulcer disease",
+  "revid": 1368709205,
+  "topic_en": "Peptic ulcer disease",
+  "n_chars": 26719,
+  "file": "data/raw/wikipedia/en/peptic_ulcer_disease.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Polyendocrine metabolic ovarian syndrome",
+  "revid": 1379127309,
+  "topic_en": "Polyendocrine metabolic ovarian syndrome",
+  "n_chars": 31734,
+  "file": "data/raw/wikipedia/en/polyendocrine_metabolic_ovarian_syndrome.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Prednisone",
+  "revid": 1379160529,
+  "topic_en": "Prednisone",
+  "n_chars": 10608,
+  "file": "data/raw/wikipedia/en/prednisone.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Rabies",
+  "revid": 1376495703,
+  "topic_en": "Rabies",
+  "n_chars": 33324,
+  "file": "data/raw/wikipedia/en/rabies.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Rifampicin",
+  "revid": 1374979670,
+  "topic_en": "Rifampicin",
+  "n_chars": 16851,
+  "file": "data/raw/wikipedia/en/rifampicin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Rubella",
+  "revid": 1378344937,
+  "topic_en": "Rubella",
+  "n_chars": 15887,
+  "file": "data/raw/wikipedia/en/rubella.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Salbutamol",
+  "revid": 1376825391,
+  "topic_en": "Salbutamol",
+  "n_chars": 7506,
+  "file": "data/raw/wikipedia/en/salbutamol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Scoliosis",
+  "revid": 1378998114,
+  "topic_en": "Scoliosis",
+  "n_chars": 28624,
+  "file": "data/raw/wikipedia/en/scoliosis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Scrub typhus",
+  "revid": 1362744842,
+  "topic_en": "Scrub typhus",
+  "n_chars": 9289,
+  "file": "data/raw/wikipedia/en/scrub_typhus.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Sepsis",
+  "revid": 1379501922,
+  "topic_en": "Sepsis",
+  "n_chars": 53924,
+  "file": "data/raw/wikipedia/en/sepsis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Sertraline",
+  "revid": 1379097297,
+  "topic_en": "Sertraline",
+  "n_chars": 33324,
+  "file": "data/raw/wikipedia/en/sertraline.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Shingles",
+  "revid": 1379623747,
+  "topic_en": "Shingles",
+  "n_chars": 27975,
+  "file": "data/raw/wikipedia/en/shingles.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Shortness of breath",
+  "revid": 1378301150,
+  "topic_en": "Shortness of breath",
+  "n_chars": 22071,
+  "file": "data/raw/wikipedia/en/shortness_of_breath.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Simvastatin",
+  "revid": 1373792994,
+  "topic_en": "Simvastatin",
+  "n_chars": 10319,
+  "file": "data/raw/wikipedia/en/simvastatin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Sinusitis",
+  "revid": 1378899144,
+  "topic_en": "Sinusitis",
+  "n_chars": 24034,
+  "file": "data/raw/wikipedia/en/sinusitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Spironolactone",
+  "revid": 1369649243,
+  "topic_en": "Spironolactone",
+  "n_chars": 52408,
+  "file": "data/raw/wikipedia/en/spironolactone.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Stomach cancer",
+  "revid": 1379452865,
+  "topic_en": "Stomach cancer",
+  "n_chars": 25306,
+  "file": "data/raw/wikipedia/en/stomach_cancer.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Tenofovir disoproxil",
+  "revid": 1356054623,
+  "topic_en": "Tenofovir disoproxil",
+  "n_chars": 9372,
+  "file": "data/raw/wikipedia/en/tenofovir_disoproxil.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Tension headache",
+  "revid": 1357998391,
+  "topic_en": "Tension headache",
+  "n_chars": 14380,
+  "file": "data/raw/wikipedia/en/tension_headache.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Thrombocytopenia",
+  "revid": 1366299312,
+  "topic_en": "Thrombocytopenia",
+  "n_chars": 11719,
+  "file": "data/raw/wikipedia/en/thrombocytopenia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Tramadol",
+  "revid": 1378694722,
+  "topic_en": "Tramadol",
+  "n_chars": 27752,
+  "file": "data/raw/wikipedia/en/tramadol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Type 2 diabetes",
+  "revid": 1375527475,
+  "topic_en": "Type 2 diabetes",
+  "n_chars": 30217,
+  "file": "data/raw/wikipedia/en/type_2_diabetes.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Ulcerative colitis",
+  "revid": 1366608352,
+  "topic_en": "Ulcerative colitis",
+  "n_chars": 59913,
+  "file": "data/raw/wikipedia/en/ulcerative_colitis.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Vancomycin",
+  "revid": 1372674281,
+  "topic_en": "Vancomycin",
+  "n_chars": 28754,
+  "file": "data/raw/wikipedia/en/vancomycin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Varicose veins",
+  "revid": 1377704260,
+  "topic_en": "Varicose veins",
+  "n_chars": 18578,
+  "file": "data/raw/wikipedia/en/varicose_veins.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Vertigo",
+  "revid": 1368826486,
+  "topic_en": "Vertigo",
+  "n_chars": 16593,
+  "file": "data/raw/wikipedia/en/vertigo.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Vitamin D",
+  "revid": 1378586374,
+  "topic_en": "Vitamin D",
+  "n_chars": 60728,
+  "file": "data/raw/wikipedia/en/vitamin_d.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "en",
+  "title": "Warfarin",
+  "revid": 1368670593,
+  "topic_en": "Warfarin",
+  "n_chars": 38045,
+  "file": "data/raw/wikipedia/en/warfarin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Amoxicillin",
+  "revid": 74881861,
+  "topic_en": "Amoxicillin",
+  "n_chars": 8130,
+  "file": "data/raw/wikipedia/vi/amoxicillin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Aspirin",
+  "revid": 75254977,
+  "topic_en": "Aspirin",
+  "n_chars": 16421,
+  "file": "data/raw/wikipedia/vi/aspirin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Buồn nôn",
+  "revid": 74909270,
+  "topic_en": "Nausea",
+  "n_chars": 5182,
+  "file": "data/raw/wikipedia/vi/buon_non.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Béo phì",
+  "revid": 75612858,
+  "topic_en": "Obesity",
+  "n_chars": 58921,
+  "file": "data/raw/wikipedia/vi/beo_phi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bạch biến",
+  "revid": 75349963,
+  "topic_en": "Vitiligo",
+  "n_chars": 3341,
+  "file": "data/raw/wikipedia/vi/bach_bien.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bạch hầu",
+  "revid": 75046504,
+  "topic_en": "Diphtheria",
+  "n_chars": 14934,
+  "file": "data/raw/wikipedia/vi/bach_hau.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh Alzheimer",
+  "revid": 75577734,
+  "topic_en": "Alzheimer's disease",
+  "n_chars": 38834,
+  "file": "data/raw/wikipedia/vi/benh_alzheimer.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh Chlamydia",
+  "revid": 74961901,
+  "topic_en": "Chlamydia",
+  "n_chars": 4006,
+  "file": "data/raw/wikipedia/vi/benh_chlamydia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh Crohn",
+  "revid": 74517746,
+  "topic_en": "Crohn's disease",
+  "n_chars": 3238,
+  "file": "data/raw/wikipedia/vi/benh_crohn.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh Parkinson",
+  "revid": 75350191,
+  "topic_en": "Parkinson's disease",
+  "n_chars": 6648,
+  "file": "data/raw/wikipedia/vi/benh_parkinson.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh Whitmore",
+  "revid": 75350232,
+  "topic_en": "Melioidosis",
+  "n_chars": 40469,
+  "file": "data/raw/wikipedia/vi/benh_whitmore.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh coeliac",
+  "revid": 75566821,
+  "topic_en": "Coeliac disease",
+  "n_chars": 10346,
+  "file": "data/raw/wikipedia/vi/benh_coeliac.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh gút",
+  "revid": 74969443,
+  "topic_en": "Gout",
+  "n_chars": 11432,
+  "file": "data/raw/wikipedia/vi/benh_gut.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh phổi tắc nghẽn mạn tính",
+  "revid": 75350197,
+  "topic_en": "Chronic obstructive pulmonary disease",
+  "n_chars": 8221,
+  "file": "data/raw/wikipedia/vi/benh_phoi_tac_nghen_man_tinh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh tan máu bẩm sinh",
+  "revid": 73407847,
+  "topic_en": "Thalassemia",
+  "n_chars": 5571,
+  "file": "data/raw/wikipedia/vi/benh_tan_mau_bam_sinh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh tay, chân, miệng",
+  "revid": 74370749,
+  "topic_en": "Hand, foot, and mouth disease",
+  "n_chars": 11040,
+  "file": "data/raw/wikipedia/vi/benh_tay_chan_mieng.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh thận mạn tính",
+  "revid": 75549160,
+  "topic_en": "Chronic kidney disease",
+  "n_chars": 12010,
+  "file": "data/raw/wikipedia/vi/benh_than_man_tinh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh tả",
+  "revid": 75583892,
+  "topic_en": "Cholera",
+  "n_chars": 26915,
+  "file": "data/raw/wikipedia/vi/benh_ta.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh vẩy nến",
+  "revid": 71814959,
+  "topic_en": "Psoriasis",
+  "n_chars": 7759,
+  "file": "data/raw/wikipedia/vi/benh_vay_nen.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Bệnh động mạch vành",
+  "revid": 74789612,
+  "topic_en": "Coronary artery disease",
+  "n_chars": 3015,
+  "file": "data/raw/wikipedia/vi/benh_dong_mach_vanh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "COVID-19",
+  "revid": 75352659,
+  "topic_en": "COVID-19",
+  "n_chars": 22272,
+  "file": "data/raw/wikipedia/vi/covid_19.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Captopril",
+  "revid": 74518099,
+  "topic_en": "Captopril",
+  "n_chars": 6000,
+  "file": "data/raw/wikipedia/vi/captopril.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ceftriaxone",
+  "revid": 75247186,
+  "topic_en": "Ceftriaxone",
+  "n_chars": 3840,
+  "file": "data/raw/wikipedia/vi/ceftriaxone.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Cholesterol",
+  "revid": 75131175,
+  "topic_en": "Cholesterol",
+  "n_chars": 7625,
+  "file": "data/raw/wikipedia/vi/cholesterol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Chán ăn tâm thần",
+  "revid": 74451725,
+  "topic_en": "Anorexia",
+  "n_chars": 17318,
+  "file": "data/raw/wikipedia/vi/chan_an_tam_than.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Chỉ số khối cơ thể",
+  "revid": 74755734,
+  "topic_en": "Body mass index",
+  "n_chars": 3873,
+  "file": "data/raw/wikipedia/vi/chi_so_khoi_co_the.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Chứng nghiện rượu",
+  "revid": 75264596,
+  "topic_en": "Alcoholism",
+  "n_chars": 16954,
+  "file": "data/raw/wikipedia/vi/chung_nghien_ruou.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Cúm",
+  "revid": 75477183,
+  "topic_en": "Influenza",
+  "n_chars": 9005,
+  "file": "data/raw/wikipedia/vi/cum.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Cườm nước",
+  "revid": 74904715,
+  "topic_en": "Glaucoma",
+  "n_chars": 4089,
+  "file": "data/raw/wikipedia/vi/cuom_nuoc.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Cảm lạnh",
+  "revid": 74761710,
+  "topic_en": "Common cold",
+  "n_chars": 10937,
+  "file": "data/raw/wikipedia/vi/cam_lanh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Cận thị",
+  "revid": 75056968,
+  "topic_en": "Myopia",
+  "n_chars": 4219,
+  "file": "data/raw/wikipedia/vi/can_thi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Domperidone",
+  "revid": 75587832,
+  "topic_en": "Domperidone",
+  "n_chars": 16834,
+  "file": "data/raw/wikipedia/vi/domperidone.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Dại (bệnh)",
+  "revid": 75577671,
+  "topic_en": "Rabies",
+  "n_chars": 23778,
+  "file": "data/raw/wikipedia/vi/dai_benh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Giang mai",
+  "revid": 75585144,
+  "topic_en": "Syphilis",
+  "n_chars": 24889,
+  "file": "data/raw/wikipedia/vi/giang_mai.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "HIV/AIDS",
+  "revid": 75605175,
+  "topic_en": "HIV/AIDS",
+  "n_chars": 29795,
+  "file": "data/raw/wikipedia/vi/hiv_aids.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Helicobacter pylori",
+  "revid": 75171162,
+  "topic_en": "Helicobacter pylori",
+  "n_chars": 6712,
+  "file": "data/raw/wikipedia/vi/helicobacter_pylori.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hen phế quản",
+  "revid": 75272365,
+  "topic_en": "Asthma",
+  "n_chars": 11246,
+  "file": "data/raw/wikipedia/vi/hen_phe_quan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Herpes đơn dạng",
+  "revid": 75608028,
+  "topic_en": "Herpes",
+  "n_chars": 8874,
+  "file": "data/raw/wikipedia/vi/herpes_don_dang.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ho gà",
+  "revid": 75609081,
+  "topic_en": "Whooping cough",
+  "n_chars": 6848,
+  "file": "data/raw/wikipedia/vi/ho_ga.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Huyết khối tĩnh mạch sâu",
+  "revid": 74234841,
+  "topic_en": "Deep vein thrombosis",
+  "n_chars": 10057,
+  "file": "data/raw/wikipedia/vi/huyet_khoi_tinh_mach_sau.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Huyết áp",
+  "revid": 74818911,
+  "topic_en": "Blood pressure",
+  "n_chars": 5654,
+  "file": "data/raw/wikipedia/vi/huyet_ap.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hóa trị liệu",
+  "revid": 75263700,
+  "topic_en": "Chemotherapy",
+  "n_chars": 4166,
+  "file": "data/raw/wikipedia/vi/hoa_tri_lieu.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hạ đường huyết",
+  "revid": 74470174,
+  "topic_en": "Hypoglycemia",
+  "n_chars": 7252,
+  "file": "data/raw/wikipedia/vi/ha_duong_huyet.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hội chứng Down",
+  "revid": 75266098,
+  "topic_en": "Down syndrome",
+  "n_chars": 6942,
+  "file": "data/raw/wikipedia/vi/hoi_chung_down.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hội chứng buồng trứng đa nang",
+  "revid": 75069215,
+  "topic_en": "Polyendocrine metabolic ovarian syndrome",
+  "n_chars": 3746,
+  "file": "data/raw/wikipedia/vi/hoi_chung_buong_trung_da_nang.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hội chứng ruột kích thích",
+  "revid": 75517980,
+  "topic_en": "Irritable bowel syndrome",
+  "n_chars": 12080,
+  "file": "data/raw/wikipedia/vi/hoi_chung_ruot_kich_thich.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Hội chứng ống cổ tay",
+  "revid": 72029376,
+  "topic_en": "Carpal tunnel syndrome",
+  "n_chars": 26322,
+  "file": "data/raw/wikipedia/vi/hoi_chung_ong_co_tay.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ibuprofen",
+  "revid": 75378372,
+  "topic_en": "Ibuprofen",
+  "n_chars": 10305,
+  "file": "data/raw/wikipedia/vi/ibuprofen.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Isoniazid",
+  "revid": 75578568,
+  "topic_en": "Isoniazid",
+  "n_chars": 8817,
+  "file": "data/raw/wikipedia/vi/isoniazid.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ivermectin",
+  "revid": 71942994,
+  "topic_en": "Ivermectin",
+  "n_chars": 3573,
+  "file": "data/raw/wikipedia/vi/ivermectin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Kém dinh dưỡng",
+  "revid": 75181814,
+  "topic_en": "Malnutrition",
+  "n_chars": 7121,
+  "file": "data/raw/wikipedia/vi/kem_dinh_duong.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Lao",
+  "revid": 75565764,
+  "topic_en": "Tuberculosis",
+  "n_chars": 51394,
+  "file": "data/raw/wikipedia/vi/lao.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Loãng xương",
+  "revid": 71023888,
+  "topic_en": "Osteoporosis",
+  "n_chars": 3641,
+  "file": "data/raw/wikipedia/vi/loang_xuong.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Lupus ban đỏ hệ thống",
+  "revid": 75632038,
+  "topic_en": "Lupus",
+  "n_chars": 35193,
+  "file": "data/raw/wikipedia/vi/lupus_ban_do_he_thong.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Lậu mủ",
+  "revid": 75223491,
+  "topic_en": "Gonorrhea",
+  "n_chars": 4647,
+  "file": "data/raw/wikipedia/vi/lau_mu.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Morphin",
+  "revid": 75243526,
+  "topic_en": "Morphine",
+  "n_chars": 17323,
+  "file": "data/raw/wikipedia/vi/morphin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Mãn kinh",
+  "revid": 70885313,
+  "topic_en": "Menopause",
+  "n_chars": 4118,
+  "file": "data/raw/wikipedia/vi/man_kinh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Mất ngủ",
+  "revid": 73482905,
+  "topic_en": "Insomnia",
+  "n_chars": 4070,
+  "file": "data/raw/wikipedia/vi/mat_ngu.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Mụn trứng cá",
+  "revid": 75497294,
+  "topic_en": "Acne",
+  "n_chars": 12902,
+  "file": "data/raw/wikipedia/vi/mun_trung_ca.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ngừng thở khi ngủ",
+  "revid": 75420536,
+  "topic_en": "Sleep apnea",
+  "n_chars": 6018,
+  "file": "data/raw/wikipedia/vi/ngung_tho_khi_ngu.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Nhiễm toan ceton do đái tháo đường",
+  "revid": 75432643,
+  "topic_en": "Diabetic ketoacidosis",
+  "n_chars": 24249,
+  "file": "data/raw/wikipedia/vi/nhiem_toan_ceton_do_dai_thao_duong.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Nhiễm trùng huyết",
+  "revid": 75081858,
+  "topic_en": "Sepsis",
+  "n_chars": 25822,
+  "file": "data/raw/wikipedia/vi/nhiem_trung_huyet.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Nhiễm trùng đường tiết niệu",
+  "revid": 70386982,
+  "topic_en": "Urinary tract infection",
+  "n_chars": 11791,
+  "file": "data/raw/wikipedia/vi/nhiem_trung_duong_tiet_nieu.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Nhồi máu cơ tim",
+  "revid": 75596358,
+  "topic_en": "Myocardial infarction",
+  "n_chars": 26151,
+  "file": "data/raw/wikipedia/vi/nhoi_mau_co_tim.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Paracetamol",
+  "revid": 75225174,
+  "topic_en": "Paracetamol",
+  "n_chars": 18747,
+  "file": "data/raw/wikipedia/vi/paracetamol.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Penicillin",
+  "revid": 75225243,
+  "topic_en": "Penicillin",
+  "n_chars": 8389,
+  "file": "data/raw/wikipedia/vi/penicillin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Phong ngứa",
+  "revid": 73677033,
+  "topic_en": "Hives",
+  "n_chars": 5517,
+  "file": "data/raw/wikipedia/vi/phong_ngua.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Quai bị",
+  "revid": 75081847,
+  "topic_en": "Mumps",
+  "n_chars": 6619,
+  "file": "data/raw/wikipedia/vi/quai_bi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Rifampicin",
+  "revid": 75423964,
+  "topic_en": "Rifampicin",
+  "n_chars": 14147,
+  "file": "data/raw/wikipedia/vi/rifampicin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Rối loạn lo âu lan tỏa",
+  "revid": 74741129,
+  "topic_en": "Generalized anxiety disorder",
+  "n_chars": 8663,
+  "file": "data/raw/wikipedia/vi/roi_loan_lo_au_lan_toa.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Rối loạn lưỡng cực",
+  "revid": 75264623,
+  "topic_en": "Bipolar disorder",
+  "n_chars": 26792,
+  "file": "data/raw/wikipedia/vi/roi_loan_luong_cuc.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Rối loạn tăng động giảm chú ý",
+  "revid": 75263707,
+  "topic_en": "Attention deficit hyperactivity disorder",
+  "n_chars": 8911,
+  "file": "data/raw/wikipedia/vi/roi_loan_tang_dong_giam_chu_y.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Rối loạn ám ảnh cưỡng chế",
+  "revid": 75460312,
+  "topic_en": "Obsessive–compulsive disorder",
+  "n_chars": 15223,
+  "file": "data/raw/wikipedia/vi/roi_loan_am_anh_cuong_che.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Suy giãn tĩnh mạch chân",
+  "revid": 74799279,
+  "topic_en": "Varicose veins",
+  "n_chars": 7679,
+  "file": "data/raw/wikipedia/vi/suy_gian_tinh_mach_chan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Suy tim",
+  "revid": 75066267,
+  "topic_en": "Heart failure",
+  "n_chars": 5886,
+  "file": "data/raw/wikipedia/vi/suy_tim.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Sốt",
+  "revid": 75047044,
+  "topic_en": "Fever",
+  "n_chars": 8275,
+  "file": "data/raw/wikipedia/vi/sot.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Sốt rét",
+  "revid": 75226802,
+  "topic_en": "Malaria",
+  "n_chars": 19839,
+  "file": "data/raw/wikipedia/vi/sot_ret.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Sốt xuất huyết Dengue",
+  "revid": 75122115,
+  "topic_en": "Dengue fever",
+  "n_chars": 16447,
+  "file": "data/raw/wikipedia/vi/sot_xuat_huyet_dengue.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Sởi",
+  "revid": 75081814,
+  "topic_en": "Measles",
+  "n_chars": 15134,
+  "file": "data/raw/wikipedia/vi/soi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Sởi Đức",
+  "revid": 75081879,
+  "topic_en": "Rubella",
+  "n_chars": 8709,
+  "file": "data/raw/wikipedia/vi/soi_duc.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Tai biến mạch máu não",
+  "revid": 75465436,
+  "topic_en": "Stroke",
+  "n_chars": 9225,
+  "file": "data/raw/wikipedia/vi/tai_bien_mach_mau_nao.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Thiếu máu",
+  "revid": 75425511,
+  "topic_en": "Anemia",
+  "n_chars": 39228,
+  "file": "data/raw/wikipedia/vi/thieu_mau.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Thoái hóa khớp",
+  "revid": 75404731,
+  "topic_en": "Osteoarthritis",
+  "n_chars": 3425,
+  "file": "data/raw/wikipedia/vi/thoai_hoa_khop.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Thương hàn",
+  "revid": 75081866,
+  "topic_en": "Typhoid fever",
+  "n_chars": 9880,
+  "file": "data/raw/wikipedia/vi/thuong_han.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Thấp tim",
+  "revid": 75227444,
+  "topic_en": "Rheumatic fever",
+  "n_chars": 13658,
+  "file": "data/raw/wikipedia/vi/thap_tim.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Thủy đậu",
+  "revid": 75544001,
+  "topic_en": "Chickenpox",
+  "n_chars": 14887,
+  "file": "data/raw/wikipedia/vi/thuy_dau.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Tiêm chủng",
+  "revid": 74971657,
+  "topic_en": "Vaccination",
+  "n_chars": 5496,
+  "file": "data/raw/wikipedia/vi/tiem_chung.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Tiêu chảy",
+  "revid": 75081836,
+  "topic_en": "Diarrhea",
+  "n_chars": 14820,
+  "file": "data/raw/wikipedia/vi/tieu_chay.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Trào ngược dạ dày thực quản",
+  "revid": 75040902,
+  "topic_en": "Gastroesophageal reflux disease",
+  "n_chars": 11203,
+  "file": "data/raw/wikipedia/vi/trao_nguoc_da_day_thuc_quan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Trĩ (bệnh)",
+  "revid": 75118345,
+  "topic_en": "Hemorrhoid",
+  "n_chars": 7588,
+  "file": "data/raw/wikipedia/vi/tri_benh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Trầm cảm",
+  "revid": 75483276,
+  "topic_en": "Major depressive disorder",
+  "n_chars": 65946,
+  "file": "data/raw/wikipedia/vi/tram_cam.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Táo bón",
+  "revid": 75225866,
+  "topic_en": "Constipation",
+  "n_chars": 7476,
+  "file": "data/raw/wikipedia/vi/tao_bon.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Tâm thần phân liệt",
+  "revid": 75424723,
+  "topic_en": "Schizophrenia",
+  "n_chars": 21166,
+  "file": "data/raw/wikipedia/vi/tam_than_phan_liet.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Tăng huyết áp",
+  "revid": 75473208,
+  "topic_en": "Hypertension",
+  "n_chars": 42150,
+  "file": "data/raw/wikipedia/vi/tang_huyet_ap.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Tự kỷ",
+  "revid": 75446433,
+  "topic_en": "Autism",
+  "n_chars": 8517,
+  "file": "data/raw/wikipedia/vi/tu_ky.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư biểu mô tế bào gan",
+  "revid": 74789496,
+  "topic_en": "Hepatocellular carcinoma",
+  "n_chars": 4152,
+  "file": "data/raw/wikipedia/vi/ung_thu_bieu_mo_te_bao_gan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư buồng trứng",
+  "revid": 73459977,
+  "topic_en": "Ovarian cancer",
+  "n_chars": 10417,
+  "file": "data/raw/wikipedia/vi/ung_thu_buong_trung.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư cổ tử cung",
+  "revid": 75273786,
+  "topic_en": "Cervical cancer",
+  "n_chars": 5423,
+  "file": "data/raw/wikipedia/vi/ung_thu_co_tu_cung.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư dạ dày",
+  "revid": 75228425,
+  "topic_en": "Stomach cancer",
+  "n_chars": 13662,
+  "file": "data/raw/wikipedia/vi/ung_thu_da_day.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư phổi",
+  "revid": 75429615,
+  "topic_en": "Lung cancer",
+  "n_chars": 16528,
+  "file": "data/raw/wikipedia/vi/ung_thu_phoi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư tuyến giáp",
+  "revid": 73724180,
+  "topic_en": "Thyroid cancer",
+  "n_chars": 13165,
+  "file": "data/raw/wikipedia/vi/ung_thu_tuyen_giap.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư tuyến tiền liệt",
+  "revid": 75228432,
+  "topic_en": "Prostate cancer",
+  "n_chars": 11641,
+  "file": "data/raw/wikipedia/vi/ung_thu_tuyen_tien_liet.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư tuyến tụy",
+  "revid": 75473961,
+  "topic_en": "Pancreatic cancer",
+  "n_chars": 41087,
+  "file": "data/raw/wikipedia/vi/ung_thu_tuyen_tuy.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư vòm họng",
+  "revid": 75228438,
+  "topic_en": "Nasopharyngeal carcinoma",
+  "n_chars": 6037,
+  "file": "data/raw/wikipedia/vi/ung_thu_vom_hong.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư vú",
+  "revid": 74311830,
+  "topic_en": "Breast cancer",
+  "n_chars": 15900,
+  "file": "data/raw/wikipedia/vi/ung_thu_vu.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ung thư đại trực tràng",
+  "revid": 74796840,
+  "topic_en": "Colorectal cancer",
+  "n_chars": 11065,
+  "file": "data/raw/wikipedia/vi/ung_thu_dai_truc_trang.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Uốn ván",
+  "revid": 75537156,
+  "topic_en": "Tetanus",
+  "n_chars": 6967,
+  "file": "data/raw/wikipedia/vi/uon_van.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Vitamin D",
+  "revid": 75429894,
+  "topic_en": "Vitamin D",
+  "n_chars": 14811,
+  "file": "data/raw/wikipedia/vi/vitamin_d.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm amidan",
+  "revid": 75272355,
+  "topic_en": "Tonsillitis",
+  "n_chars": 5024,
+  "file": "data/raw/wikipedia/vi/viem_amidan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm cột sống dính khớp",
+  "revid": 75529951,
+  "topic_en": "Ankylosing spondylitis",
+  "n_chars": 12630,
+  "file": "data/raw/wikipedia/vi/viem_cot_song_dinh_khop.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm da cơ địa",
+  "revid": 74703927,
+  "topic_en": "Atopic dermatitis",
+  "n_chars": 11300,
+  "file": "data/raw/wikipedia/vi/viem_da_co_dia.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm dạ dày ruột",
+  "revid": 75228605,
+  "topic_en": "Gastroenteritis",
+  "n_chars": 18355,
+  "file": "data/raw/wikipedia/vi/viem_da_day_ruot.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm gan A",
+  "revid": 75273836,
+  "topic_en": "Hepatitis A",
+  "n_chars": 16225,
+  "file": "data/raw/wikipedia/vi/viem_gan_a.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm gan B",
+  "revid": 75429844,
+  "topic_en": "Hepatitis B",
+  "n_chars": 23138,
+  "file": "data/raw/wikipedia/vi/viem_gan_b.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm gan C",
+  "revid": 75273833,
+  "topic_en": "Hepatitis C",
+  "n_chars": 22844,
+  "file": "data/raw/wikipedia/vi/viem_gan_c.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm khớp dạng thấp",
+  "revid": 75316366,
+  "topic_en": "Rheumatoid arthritis",
+  "n_chars": 6420,
+  "file": "data/raw/wikipedia/vi/viem_khop_dang_thap.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm loét dạ dày tá tràng",
+  "revid": 75228615,
+  "topic_en": "Peptic ulcer disease",
+  "n_chars": 7114,
+  "file": "data/raw/wikipedia/vi/viem_loet_da_day_ta_trang.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm màng não",
+  "revid": 74598230,
+  "topic_en": "Meningitis",
+  "n_chars": 6728,
+  "file": "data/raw/wikipedia/vi/viem_mang_nao.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm phổi",
+  "revid": 75228628,
+  "topic_en": "Pneumonia",
+  "n_chars": 29767,
+  "file": "data/raw/wikipedia/vi/viem_phoi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm ruột thừa",
+  "revid": 75619840,
+  "topic_en": "Appendicitis",
+  "n_chars": 7085,
+  "file": "data/raw/wikipedia/vi/viem_ruot_thua.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm tai giữa",
+  "revid": 75228633,
+  "topic_en": "Otitis media",
+  "n_chars": 7141,
+  "file": "data/raw/wikipedia/vi/viem_tai_giua.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Viêm xoang",
+  "revid": 75272346,
+  "topic_en": "Sinusitis",
+  "n_chars": 8175,
+  "file": "data/raw/wikipedia/vi/viem_xoang.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Vàng da",
+  "revid": 74205633,
+  "topic_en": "Jaundice",
+  "n_chars": 3637,
+  "file": "data/raw/wikipedia/vi/vang_da.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Vô sinh",
+  "revid": 74508645,
+  "topic_en": "Infertility",
+  "n_chars": 3812,
+  "file": "data/raw/wikipedia/vi/vo_sinh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Warfarin",
+  "revid": 75444868,
+  "topic_en": "Warfarin",
+  "n_chars": 34141,
+  "file": "data/raw/wikipedia/vi/warfarin.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Xơ gan",
+  "revid": 74511547,
+  "topic_en": "Cirrhosis",
+  "n_chars": 3149,
+  "file": "data/raw/wikipedia/vi/xo_gan.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Zona (bệnh)",
+  "revid": 75620728,
+  "topic_en": "Shingles",
+  "n_chars": 4908,
+  "file": "data/raw/wikipedia/vi/zona_benh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Ù tai",
+  "revid": 75446453,
+  "topic_en": "Tinnitus",
+  "n_chars": 7013,
+  "file": "data/raw/wikipedia/vi/u_tai.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đau lưng dưới",
+  "revid": 75353361,
+  "topic_en": "Low back pain",
+  "n_chars": 7350,
+  "file": "data/raw/wikipedia/vi/dau_lung_duoi.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đau mắt đỏ",
+  "revid": 75220056,
+  "topic_en": "Conjunctivitis",
+  "n_chars": 15516,
+  "file": "data/raw/wikipedia/vi/dau_mat_do.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đau ngực",
+  "revid": 75272239,
+  "topic_en": "Chest pain",
+  "n_chars": 4560,
+  "file": "data/raw/wikipedia/vi/dau_nguc.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đau nửa đầu",
+  "revid": 75353368,
+  "topic_en": "Migraine",
+  "n_chars": 39009,
+  "file": "data/raw/wikipedia/vi/dau_nua_dau.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đau thắt ngực",
+  "revid": 75516022,
+  "topic_en": "Angina",
+  "n_chars": 6757,
+  "file": "data/raw/wikipedia/vi/dau_that_nguc.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đau đầu",
+  "revid": 75576414,
+  "topic_en": "Headache",
+  "n_chars": 5718,
+  "file": "data/raw/wikipedia/vi/dau_dau.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Điếc",
+  "revid": 75369656,
+  "topic_en": "Hearing loss",
+  "n_chars": 3017,
+  "file": "data/raw/wikipedia/vi/diec.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đái tháo đường",
+  "revid": 75571043,
+  "topic_en": "Diabetes",
+  "n_chars": 22538,
+  "file": "data/raw/wikipedia/vi/dai_thao_duong.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đái tháo đường loại 2",
+  "revid": 75584376,
+  "topic_en": "Type 2 diabetes",
+  "n_chars": 24306,
+  "file": "data/raw/wikipedia/vi/dai_thao_duong_loai_2.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Động kinh",
+  "revid": 75577763,
+  "topic_en": "Epilepsy",
+  "n_chars": 7828,
+  "file": "data/raw/wikipedia/vi/dong_kinh.md"
+ },
+ {
+  "split": "corpus",
+  "lang": "vi",
+  "title": "Đục thủy tinh thể",
+  "revid": 75463679,
+  "topic_en": "Cataract",
+  "n_chars": 3090,
+  "file": "data/raw/wikipedia/vi/duc_thuy_tinh_the.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "ALS",
+  "revid": 1378573400,
+  "topic_en": "ALS",
+  "n_chars": 59927,
+  "file": "data/holdout/wikipedia/en/als.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Acromegaly",
+  "revid": 1377482057,
+  "topic_en": "Acromegaly",
+  "n_chars": 16114,
+  "file": "data/holdout/wikipedia/en/acromegaly.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Addison's disease",
+  "revid": 1354023907,
+  "topic_en": "Addison's disease",
+  "n_chars": 17144,
+  "file": "data/holdout/wikipedia/en/addison_s_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Anthrax",
+  "revid": 1379372999,
+  "topic_en": "Anthrax",
+  "n_chars": 33389,
+  "file": "data/holdout/wikipedia/en/anthrax.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Behçet's disease",
+  "revid": 1376826010,
+  "topic_en": "Behçet's disease",
+  "n_chars": 20568,
+  "file": "data/holdout/wikipedia/en/behcet_s_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Bell's palsy",
+  "revid": 1375233446,
+  "topic_en": "Bell's palsy",
+  "n_chars": 17344,
+  "file": "data/holdout/wikipedia/en/bell_s_palsy.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Botulism",
+  "revid": 1376192744,
+  "topic_en": "Botulism",
+  "n_chars": 39002,
+  "file": "data/holdout/wikipedia/en/botulism.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Brucellosis",
+  "revid": 1375513599,
+  "topic_en": "Brucellosis",
+  "n_chars": 24712,
+  "file": "data/holdout/wikipedia/en/brucellosis.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Chagas disease",
+  "revid": 1365826656,
+  "topic_en": "Chagas disease",
+  "n_chars": 33424,
+  "file": "data/holdout/wikipedia/en/chagas_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Cushing's syndrome",
+  "revid": 1378966575,
+  "topic_en": "Cushing's syndrome",
+  "n_chars": 17967,
+  "file": "data/holdout/wikipedia/en/cushing_s_syndrome.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Cystic fibrosis",
+  "revid": 1379813009,
+  "topic_en": "Cystic fibrosis",
+  "n_chars": 66297,
+  "file": "data/holdout/wikipedia/en/cystic_fibrosis.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Fibromyalgia",
+  "revid": 1379329342,
+  "topic_en": "Fibromyalgia",
+  "n_chars": 55853,
+  "file": "data/holdout/wikipedia/en/fibromyalgia.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Finasteride",
+  "revid": 1379152365,
+  "topic_en": "Finasteride",
+  "n_chars": 22760,
+  "file": "data/holdout/wikipedia/en/finasteride.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Guillain–Barré syndrome",
+  "revid": 1378016400,
+  "topic_en": "Guillain–Barré syndrome",
+  "n_chars": 27744,
+  "file": "data/holdout/wikipedia/en/guillain_barre_syndrome.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Haemophilia",
+  "revid": 1379703435,
+  "topic_en": "Haemophilia",
+  "n_chars": 28199,
+  "file": "data/holdout/wikipedia/en/haemophilia.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Hidradenitis suppurativa",
+  "revid": 1379258659,
+  "topic_en": "Hidradenitis suppurativa",
+  "n_chars": 21682,
+  "file": "data/holdout/wikipedia/en/hidradenitis_suppurativa.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Huntington's disease",
+  "revid": 1377759975,
+  "topic_en": "Huntington's disease",
+  "n_chars": 53739,
+  "file": "data/holdout/wikipedia/en/huntington_s_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Iron overload",
+  "revid": 1371015439,
+  "topic_en": "Iron overload",
+  "n_chars": 21923,
+  "file": "data/holdout/wikipedia/en/iron_overload.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Isotretinoin",
+  "revid": 1379532254,
+  "topic_en": "Isotretinoin",
+  "n_chars": 29495,
+  "file": "data/holdout/wikipedia/en/isotretinoin.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Kawasaki disease",
+  "revid": 1374811409,
+  "topic_en": "Kawasaki disease",
+  "n_chars": 37636,
+  "file": "data/holdout/wikipedia/en/kawasaki_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Keratoconus",
+  "revid": 1368882556,
+  "topic_en": "Keratoconus",
+  "n_chars": 30824,
+  "file": "data/holdout/wikipedia/en/keratoconus.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Leishmaniasis",
+  "revid": 1378488207,
+  "topic_en": "Leishmaniasis",
+  "n_chars": 23624,
+  "file": "data/holdout/wikipedia/en/leishmaniasis.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Leprosy",
+  "revid": 1379126411,
+  "topic_en": "Leprosy",
+  "n_chars": 40446,
+  "file": "data/holdout/wikipedia/en/leprosy.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Lyme disease",
+  "revid": 1377576655,
+  "topic_en": "Lyme disease",
+  "n_chars": 82712,
+  "file": "data/holdout/wikipedia/en/lyme_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Marfan syndrome",
+  "revid": 1377689835,
+  "topic_en": "Marfan syndrome",
+  "n_chars": 22392,
+  "file": "data/holdout/wikipedia/en/marfan_syndrome.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Myasthenia gravis",
+  "revid": 1376018956,
+  "topic_en": "Myasthenia gravis",
+  "n_chars": 37388,
+  "file": "data/holdout/wikipedia/en/myasthenia_gravis.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Ménière's disease",
+  "revid": 1377987855,
+  "topic_en": "Ménière's disease",
+  "n_chars": 15492,
+  "file": "data/holdout/wikipedia/en/meniere_s_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Narcolepsy",
+  "revid": 1378297000,
+  "topic_en": "Narcolepsy",
+  "n_chars": 33864,
+  "file": "data/holdout/wikipedia/en/narcolepsy.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Pemphigus vulgaris",
+  "revid": 1362793833,
+  "topic_en": "Pemphigus vulgaris",
+  "n_chars": 8999,
+  "file": "data/holdout/wikipedia/en/pemphigus_vulgaris.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Phenylketonuria",
+  "revid": 1378222619,
+  "topic_en": "Phenylketonuria",
+  "n_chars": 27007,
+  "file": "data/holdout/wikipedia/en/phenylketonuria.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Raynaud syndrome",
+  "revid": 1377156502,
+  "topic_en": "Raynaud syndrome",
+  "n_chars": 12623,
+  "file": "data/holdout/wikipedia/en/raynaud_syndrome.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Restless legs syndrome",
+  "revid": 1376098539,
+  "topic_en": "Restless legs syndrome",
+  "n_chars": 24626,
+  "file": "data/holdout/wikipedia/en/restless_legs_syndrome.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Sarcoidosis",
+  "revid": 1372050303,
+  "topic_en": "Sarcoidosis",
+  "n_chars": 41541,
+  "file": "data/holdout/wikipedia/en/sarcoidosis.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Scabies",
+  "revid": 1379832221,
+  "topic_en": "Scabies",
+  "n_chars": 23740,
+  "file": "data/holdout/wikipedia/en/scabies.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Sildenafil",
+  "revid": 1379240289,
+  "topic_en": "Sildenafil",
+  "n_chars": 13748,
+  "file": "data/holdout/wikipedia/en/sildenafil.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Sjögren's disease",
+  "revid": 1378802341,
+  "topic_en": "Sjögren's disease",
+  "n_chars": 33790,
+  "file": "data/holdout/wikipedia/en/sjogren_s_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Smallpox",
+  "revid": 1378729969,
+  "topic_en": "Smallpox",
+  "n_chars": 33703,
+  "file": "data/holdout/wikipedia/en/smallpox.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Tourette syndrome",
+  "revid": 1374799457,
+  "topic_en": "Tourette syndrome",
+  "n_chars": 47878,
+  "file": "data/holdout/wikipedia/en/tourette_syndrome.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Toxoplasmosis",
+  "revid": 1379424448,
+  "topic_en": "Toxoplasmosis",
+  "n_chars": 39035,
+  "file": "data/holdout/wikipedia/en/toxoplasmosis.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Trigeminal neuralgia",
+  "revid": 1374091679,
+  "topic_en": "Trigeminal neuralgia",
+  "n_chars": 13872,
+  "file": "data/holdout/wikipedia/en/trigeminal_neuralgia.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Wilson's disease",
+  "revid": 1379285329,
+  "topic_en": "Wilson's disease",
+  "n_chars": 23882,
+  "file": "data/holdout/wikipedia/en/wilson_s_disease.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "en",
+  "title": "Yellow fever",
+  "revid": 1379053028,
+  "topic_en": "Yellow fever",
+  "n_chars": 39634,
+  "file": "data/holdout/wikipedia/en/yellow_fever.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Bệnh Behçet",
+  "revid": 74517723,
+  "topic_en": "Behçet's disease",
+  "n_chars": 6446,
+  "file": "data/holdout/wikipedia/vi/benh_behcet.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Bệnh Lyme",
+  "revid": 75262868,
+  "topic_en": "Lyme disease",
+  "n_chars": 3146,
+  "file": "data/holdout/wikipedia/vi/benh_lyme.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Bệnh Phenylketone niệu",
+  "revid": 74581793,
+  "topic_en": "Phenylketonuria",
+  "n_chars": 4751,
+  "file": "data/holdout/wikipedia/vi/benh_phenylketone_nieu.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Bệnh nhược cơ",
+  "revid": 75262915,
+  "topic_en": "Myasthenia gravis",
+  "n_chars": 8693,
+  "file": "data/holdout/wikipedia/vi/benh_nhuoc_co.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Bệnh than",
+  "revid": 75105951,
+  "topic_en": "Anthrax",
+  "n_chars": 21926,
+  "file": "data/holdout/wikipedia/vi/benh_than.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Chứng ngủ rũ",
+  "revid": 75106118,
+  "topic_en": "Narcolepsy",
+  "n_chars": 3809,
+  "file": "data/holdout/wikipedia/vi/chung_ngu_ru.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Hemophilia",
+  "revid": 75382237,
+  "topic_en": "Haemophilia",
+  "n_chars": 10366,
+  "file": "data/holdout/wikipedia/vi/hemophilia.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Hội chứng Marfan",
+  "revid": 75379272,
+  "topic_en": "Marfan syndrome",
+  "n_chars": 7222,
+  "file": "data/holdout/wikipedia/vi/hoi_chung_marfan.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Hội chứng Raynaud",
+  "revid": 75585339,
+  "topic_en": "Raynaud syndrome",
+  "n_chars": 12144,
+  "file": "data/holdout/wikipedia/vi/hoi_chung_raynaud.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Hội chứng Sjögren",
+  "revid": 74687598,
+  "topic_en": "Sjögren's disease",
+  "n_chars": 6983,
+  "file": "data/holdout/wikipedia/vi/hoi_chung_sjogren.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Hội chứng Tourette",
+  "revid": 75413083,
+  "topic_en": "Tourette syndrome",
+  "n_chars": 3670,
+  "file": "data/holdout/wikipedia/vi/hoi_chung_tourette.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Isotretinoin",
+  "revid": 74475177,
+  "topic_en": "Isotretinoin",
+  "n_chars": 3266,
+  "file": "data/holdout/wikipedia/vi/isotretinoin.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Liệt thần kinh mặt",
+  "revid": 75117401,
+  "topic_en": "Bell's palsy",
+  "n_chars": 12571,
+  "file": "data/holdout/wikipedia/vi/liet_than_kinh_mat.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Ngộ độc thịt",
+  "revid": 75615673,
+  "topic_en": "Botulism",
+  "n_chars": 8413,
+  "file": "data/holdout/wikipedia/vi/ngo_doc_thit.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Phong cùi",
+  "revid": 74942170,
+  "topic_en": "Leprosy",
+  "n_chars": 9989,
+  "file": "data/holdout/wikipedia/vi/phong_cui.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Sốt vàng",
+  "revid": 75082646,
+  "topic_en": "Yellow fever",
+  "n_chars": 17857,
+  "file": "data/holdout/wikipedia/vi/sot_vang.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Viagra",
+  "revid": 68408283,
+  "topic_en": "Sildenafil",
+  "n_chars": 4097,
+  "file": "data/holdout/wikipedia/vi/viagra.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Xơ nang",
+  "revid": 74838022,
+  "topic_en": "Cystic fibrosis",
+  "n_chars": 4974,
+  "file": "data/holdout/wikipedia/vi/xo_nang.md"
+ },
+ {
+  "split": "holdout",
+  "lang": "vi",
+  "title": "Đậu mùa",
+  "revid": 75616190,
+  "topic_en": "Smallpox",
+  "n_chars": 40057,
+  "file": "data/holdout/wikipedia/vi/dau_mua.md"
+ }
+]

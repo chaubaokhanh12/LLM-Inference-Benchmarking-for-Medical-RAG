@@ -1,0 +1,44 @@
+# Held-out topics: fetched but NOT indexed. Used to write questions the corpus cannot answer.
+# Chosen to be loosely related to corpus topics, so they are rarely mentioned there.
+Kawasaki disease
+Narcolepsy
+Sarcoidosis
+Myasthenia gravis
+Ménière's disease
+Wilson's disease
+Hemochromatosis
+Guillain–Barré syndrome
+Tourette syndrome
+Raynaud syndrome
+Lyme disease
+Leprosy
+Scabies
+Hidradenitis suppurativa
+Pemphigus vulgaris
+Acromegaly
+Addison's disease
+Cushing's syndrome
+Marfan syndrome
+Huntington's disease
+Amyotrophic lateral sclerosis
+Toxoplasmosis
+Leishmaniasis
+Chagas disease
+Botulism
+Anthrax
+Brucellosis
+Sjögren's syndrome
+Behçet's disease
+Fibromyalgia
+Restless legs syndrome
+Bell's palsy
+Trigeminal neuralgia
+Keratoconus
+Cystic fibrosis
+Phenylketonuria
+Haemophilia
+Yellow fever
+Smallpox
+Isotretinoin
+Sildenafil
+Finasteride

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-12T17:19:03+00:00",
+  "file": "medical_rag_prompts.jsonl",
+  "n_prompts": 300,
+  "types": [
+    "answerable"
+  ],
+  "qa_sha256": "8b605b76f0bd9f2d",
+  "system_prompt_sha256": "5e7688f48bf38afb",
+  "embed_model": "intfloat/multilingual-e5-base",
+  "rerank_model": "BAAI/bge-reranker-v2-m3",
+  "chunker_hash": "31ed23c67fb8",
+  "corpus_fingerprint": "5f869a94d30c58a6",
+  "index_built_at": "2026-10-12T14:08:55+00:00",
+  "tokenizer": "Qwen/Qwen2.5-7B-Instruct",
+  "top_n": 5
+}

@@ -1,0 +1,21 @@
+experiment: DEV
+backend: ollama
+config_name: dev_ollama_3b
+base_url: http://localhost:11434/v1
+model: medrag-qwen2.5-3b
+quantization: gguf-q4_k_m
+server_command: null
+health_url: http://localhost:11434/api/version
+concurrency:
+- 1
+- 2
+repeats: 1
+num_prompts: 6
+warmup_requests: 2
+max_tokens: 64
+temperature: 0
+prompts: ../prompts/medical_rag_prompts.jsonl
+tokenizer: null
+timeout_s: 300
+seed: 0
+notes: smoke test on a 4 GB laptop; not a benchmark result

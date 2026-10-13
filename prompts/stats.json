@@ -1,0 +1,33 @@
+{
+  "tokenizer": "Qwen/Qwen2.5-7B-Instruct",
+  "max_model_len": 4096,
+  "max_tokens": 256,
+  "top_n": 5,
+  "prompts_with_trimmed_contexts": 0,
+  "input_tokens": {
+    "vi": {
+      "n": 150,
+      "min": 973,
+      "p50": 1859,
+      "p95": 2384,
+      "max": 2686,
+      "mean": 1848.8
+    },
+    "all": {
+      "n": 300,
+      "min": 973,
+      "p50": 1730,
+      "p95": 2308,
+      "max": 2686,
+      "mean": 1748.1
+    },
+    "en": {
+      "n": 150,
+      "min": 1017,
+      "p50": 1666,
+      "p95": 2024,
+      "max": 2208,
+      "mean": 1647.4
+    }
+  }
+}

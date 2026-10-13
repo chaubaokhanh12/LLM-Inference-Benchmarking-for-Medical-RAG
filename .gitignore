@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Secrets
+.env
+
+# medical-rag: generated data (reproducible from scripts; data/sources is tracked)
+medical-rag/data/raw/
+medical-rag/data/holdout/
+medical-rag/data/cache/
+medical-rag/data/processed/
+medical-rag/data/index/
+medical-rag/logs/
+medical-rag/eval/data/_*
+medical-rag/eval/results/*_detail.csv
+
+# inference-bench: large raw outputs
+inference-bench/results/**/gpu.csv
+inference-bench/results/**/vllm_metrics.csv
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# inference-bench: local smoke runs
+inference-bench/results/dev_*/
+
+# Local tool config (machine-specific paths)
+.claude/

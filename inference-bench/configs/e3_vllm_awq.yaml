@@ -1,0 +1,19 @@
+experiment: E3
+backend: vllm
+config_name: vllm_awq
+base_url: http://localhost:8000/v1
+model: qwen2.5-7b
+quantization: awq-int4
+server_command: vllm serve Qwen/Qwen2.5-7B-Instruct-AWQ --served-model-name qwen2.5-7b --max-model-len 4096 --gpu-memory-utilization 0.90 --port 8000 --no-enable-prefix-caching
+metrics_url: http://localhost:8000/metrics
+concurrency:
+- 16
+repeats: 1
+num_prompts: 100
+warmup_requests: 10
+max_tokens: 256
+temperature: 0
+prompts: ../prompts/medical_rag_prompts.jsonl
+tokenizer: Qwen/Qwen2.5-7B-Instruct
+timeout_s: 300
+seed: 0
