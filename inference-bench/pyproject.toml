@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "inference-bench"
 version = "0.1.0"
@@ -17,6 +21,10 @@ dependencies = [
 [project.optional-dependencies]
 hf = ["torch>=2.3", "fastapi>=0.110", "uvicorn>=0.29", "accelerate>=0.30"]
 dev = ["pytest>=8.0"]
+
+# Only the code packages; colab/, configs/, results/ and tests/ are data or tooling.
+[tool.setuptools.packages.find]
+include = ["bench*", "servers*", "analysis*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
