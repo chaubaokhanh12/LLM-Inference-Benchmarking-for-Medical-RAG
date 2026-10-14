@@ -16,9 +16,11 @@ REPO_ROOT = PROJECT_ROOT.parent
 
 Backend = Literal["ollama", "vllm", "openai", "groq", "gemini"]
 
+# 127.0.0.1 rather than "localhost": on Windows "localhost" is tried as IPv6 (::1) first, and a server
+# listening on IPv4 only (Ollama's default) makes every new connection wait ~2 s for that to fail.
 DEFAULT_BASE_URLS: dict[str, str] = {
-    "ollama": "http://localhost:11434/v1",
-    "vllm": "http://localhost:8000/v1",
+    "ollama": "http://127.0.0.1:11434/v1",
+    "vllm": "http://127.0.0.1:8000/v1",
     "openai": "https://api.openai.com/v1",
     "groq": "https://api.groq.com/openai/v1",
 }

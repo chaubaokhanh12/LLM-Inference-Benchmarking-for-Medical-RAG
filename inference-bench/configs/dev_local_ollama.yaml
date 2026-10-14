@@ -1,11 +1,11 @@
 experiment: DEV
 backend: ollama
 config_name: dev_ollama_3b
-base_url: http://localhost:11434/v1
+base_url: http://127.0.0.1:11434/v1
 model: medrag-qwen2.5-3b
 quantization: gguf-q4_k_m
 server_command: null
-health_url: http://localhost:11434/api/version
+health_url: http://127.0.0.1:11434/api/version
 concurrency:
 - 1
 - 2

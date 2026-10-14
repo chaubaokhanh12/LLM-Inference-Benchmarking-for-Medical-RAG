@@ -47,6 +47,11 @@ Spec gốc: [medical_rag_spec.md](medical_rag_spec.md) (phần 1) và [llm_bench
       thử với Ollama trên laptop
 - [x] Phần 2 — notebook Colab `inference-bench/colab/run_benchmark.ipynb` chạy E1–E4 trên L4 (Colab Pro), lưu Drive, tự bỏ qua thí nghiệm đã xong
 - [x] Phần 2 — chạy E1–E4 trên Colab L4 (13 cấu hình, 0 lỗi), chấm chất lượng E3, README benchmark trả lời Q1–Q5
+- [x] Kiểm thử `/ask` và `/ask/stream` thật qua HTTP trên laptop (README medical-rag: "Live API check")
+- [x] Lộ trình benchmark bước 8: vLLM AWQ ghi là cấu hình khuyến nghị khi triển khai (`.env.example`,
+      README); Ollama giữ làm mặc định cho dev trên laptop
+- [x] Trả lời 7 câu hỏi phỏng vấn bằng số liệu đo: [interview_answers.md](interview_answers.md)
+- [ ] Không làm (tùy chọn trong spec): E5 TGI (Colab không có Docker), `/ingest`, `ragas`, `torch.profiler`
 
 ## Ràng buộc phần cứng (máy phát triển)
 

@@ -103,6 +103,12 @@ three lines changed, `python scripts/check_backend.py` sends real exported promp
 same backend code and gets answers in the right language with `[i]` citations; the server's
 `prompt_tokens` match the token counts of the export.
 
+**Which backend to serve with.** The [inference benchmark](../inference-bench/README.md) measured
+this system's own prompts on an NVIDIA L4: **vLLM with Qwen2.5-7B-Instruct-AWQ** is the recommended
+serving configuration (2.4× FP16 for one user, ~1.3 requests/s at 8 users with p95 TTFT < 2 s,
+no measurable quality loss). Ollama remains the development default because it runs on a laptop
+alongside the retrieval models; switching is the `.env` change above.
+
 ## Evaluation
 
 ```bash
@@ -209,6 +215,30 @@ phase because 4 GB cannot hold all three models):
 The LLM is four fifths of the latency, and its time to first token (prefill of ~2–3k prompt
 tokens) is most of that. This is what the [inference benchmark](../inference-bench/) measures
 on a datacenter GPU.
+
+### Live API check
+
+The running service (`uvicorn`, embedder + reranker + Ollama `qwen2.5:3b` on the 4 GB laptop GPU)
+was called over HTTP with hand-picked questions, including deliberately awkward ones:
+
+| Question | Result |
+| --- | --- |
+| Sốt xuất huyết Dengue có nên dùng ibuprofen để hạ sốt không? | ✓ "Không nên dùng ibuprofen … [1]", Vietnamese, citation matches |
+| What are the common side effects of metformin? | ✓ English, cites the *Adverse effects* section |
+| lieu vitamin A dieu tri soi cho tre em la bao nhieu (no diacritics) | ✓ finds *Sởi > Điều trị > Vitamin A*, answers in Vietnamese with the doses |
+| Bệnh sởi lây truyền qua đường nào? (`/ask/stream`) | ✓ SSE: `meta`, tokens arriving every ~60 ms, `done` with timings |
+| What is the recommended treatment for Kawasaki disease? | ✗ retrieval correct (aspirin), but the 3B model appended an unrelated sentence from the same passage and cited a passage `[3]` that does not exist — reported in `invalid_citations` |
+| Trẻ em có được dùng aspirin để hạ sốt không? | ✗ the answer (Reye syndrome) is in passages 1, 2 and 5, yet the model replied "not found" |
+| How is tuberculosis transmitted? | ✗ only the Vietnamese *Lao* article is in the corpus; cross-lingual retrieval misses it and the pipeline safely answers "not found" |
+
+Every answer was in the question's language and every `[i]` either matched `citations` or was flagged.
+The failures match the measured weak spots — a small 3B generator and cross-lingual retrieval. Serving
+with the larger 7B model from the [inference benchmark](../inference-bench/README.md) is recommended;
+whether it fixes these particular cases was not tested.
+
+On Windows, connect to `127.0.0.1` rather than `localhost`: a new connection to `localhost` first
+tries IPv6 and costs ~2 s against a server listening on IPv4 only (the default backend URLs use
+`127.0.0.1` for this reason).
 
 ### Benchmark prompts (`medrag.tools.export_prompts`)
 

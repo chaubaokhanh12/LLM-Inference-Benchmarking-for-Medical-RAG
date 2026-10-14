@@ -39,4 +39,5 @@ measurable quality loss; prefix caching cuts TTFT by 11–14%. The workload is p
 retrieved context is the biggest remaining lever.
 
 Specifications and plan: [docs/medical_rag_spec.md](docs/medical_rag_spec.md),
-[docs/llm_benchmark_spec.md](docs/llm_benchmark_spec.md), [docs/PLAN.md](docs/PLAN.md).
+[docs/llm_benchmark_spec.md](docs/llm_benchmark_spec.md), [docs/PLAN.md](docs/PLAN.md);
+interview questions answered with the measured numbers: [docs/interview_answers.md](docs/interview_answers.md).
