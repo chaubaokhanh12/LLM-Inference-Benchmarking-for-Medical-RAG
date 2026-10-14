@@ -1,53 +1,77 @@
-# Bilingual Medical RAG + LLM Inference Benchmark
+# 🩺 Medical RAG · LLM Inference Benchmark
 
-A Vietnamese–English medical question-answering system built from scratch (hybrid retrieval,
-reranking, cited answers), and a benchmark of how to serve its LLM: **vLLM vs Ollama vs Hugging Face
-Transformers** on an NVIDIA L4, replaying the system's own prompts.
+**Hỏi đáp y khoa song ngữ Việt Anh xây từ đầu, kèm benchmark cách phục vụ LLM của chính hệ thống.**<br>
+**A bilingual Vietnamese/English medical QA system built from scratch, plus a benchmark of how to serve its LLM.**
 
-- **vLLM: 7.6× the throughput of Hugging Face Transformers** at 32 concurrent users (Qwen2.5-7B-Instruct, L4).
-- **AWQ 4-bit: 2.4× the single-user speed of FP16** and 2.75× the KV-cache capacity, with no measurable quality loss.
-- **Retrieval: reranking lifts MRR@10 from 0.87 to 0.96**; answers are 98% faithful to their cited sources and
-  90% of questions the documents cannot answer are refused.
-- **Why:** the RAG workload is prefill-bound — 22 prompt tokens per generated token.
+![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-CUDA-EE4C2C?logo=pytorch&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Transformers-FFD21E?logo=huggingface&logoColor=black)
+![vLLM](https://img.shields.io/badge/vLLM-0.31-30A2FF)
+![Ollama](https://img.shields.io/badge/Ollama-GGUF-000000?logo=ollama&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-SSE-009688?logo=fastapi&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-Dense-0467DF?logo=meta&logoColor=white)
+![BM25](https://img.shields.io/badge/BM25-pyvi-6E4C9E)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-L4%20GPU-F9AB00?logo=googlecolab&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-LLM%20judge-412991)
+![License](https://img.shields.io/badge/License-MIT-4CA21E)
 
-![Throughput vs concurrent users: vLLM AWQ and FP16 scale to ~115 tok/s, Ollama to 99, HF Transformers stays at 15](inference-bench/results/plots/1_throughput_vs_concurrency.png)
+---
 
-| Qwen2.5-7B on 1× L4 | 1 user | 8 users | 32 users | p95 time to first token at 8 users |
+## Kết quả chính · Key results
+
+| | English | Tiếng Việt |
+| --- | --- | --- |
+| **7.6×** | vLLM throughput vs Hugging Face Transformers at 32 concurrent users | Throughput của vLLM so với HF Transformers, 32 người dùng |
+| **2.4×** | AWQ 4-bit single-user speed vs FP16, no measurable quality loss | AWQ 4-bit so với FP16 khi 1 người dùng, chất lượng không giảm |
+| **0.87 → 0.96** | MRR@10 after cross-encoder reranking | MRR@10 sau khi thêm rerank |
+| **98%** | Answers faithful to their cited sources | Câu trả lời bám đúng nguồn được trích dẫn |
+| **22 : 1** | Prompt tokens per generated token: the workload is prefill-bound | Token đầu vào trên mỗi token đầu ra: workload bị giới hạn bởi prefill |
+
+![Throughput vs concurrent users](inference-bench/results/plots/1_throughput_vs_concurrency.png)
+
+| Qwen2.5-7B, 1× L4 | 1 user | 8 users | 32 users | p95 TTFT, 8 users |
 | --- | --- | --- | --- | --- |
 | HF Transformers FP16 | 14.9 tok/s | 15.0 | 15.0 | 46 s |
 | vLLM FP16 | 15.9 | 73.3 | 114.1 | 1.2 s |
 | **vLLM AWQ 4-bit** | **38.1** | **102.0** | **118.0** | 1.7 s |
 | Ollama GGUF Q4_K_M | 38.7 | 47.1 | 98.6 | 1.7 s |
 
-Details: [inference benchmark](inference-bench/README.md) (Q1–Q5, profiling, all six figures) ·
-[RAG evaluation](medical-rag/README.md#results) · [interview notes](docs/interview_answers.md)
-
-## How the two parts fit together
+## Cấu trúc · Structure
 
 ```
- medical-rag/                      prompts/                          inference-bench/
- ┌──────────────────────────┐      ┌──────────────────────────┐      ┌──────────────────────────┐
- │ bilingual VI/EN medical  │      │ medical_rag_prompts.jsonl│      │ HF Transformers vs vLLM  │
- │ RAG: hybrid retrieval +  │ ───► │ stats.json               │ ───► │ vs Ollama: TTFT, latency,│
- │ rerank + LLM, FastAPI,   │      │ manifest.json            │      │ throughput, GPU memory   │
- │ evaluation               │      │ (exact LLM inputs)       │      │                          │
- └──────────────────────────┘      └──────────────────────────┘      └──────────────────────────┘
+ medical-rag/   →   prompts/   →   inference-bench/
+ RAG system         exact LLM      HF Transformers vs vLLM vs Ollama
+ + evaluation       inputs         latency, throughput, KV cache
 ```
 
-1. **[medical-rag/](medical-rag/)** answers medical questions in Vietnamese and English from
-   Wikipedia articles. Retrieval is built from scratch (no LangChain/LlamaIndex): a
-   section-aware chunker, dense e5 embeddings + BM25 fused with Reciprocal Rank Fusion, and a
-   cross-encoder reranker. The LLM backend (Ollama, vLLM, OpenAI, Groq, Gemini) is chosen in
-   `.env`. Every request records how long each stage takes.
-2. **[prompts/](prompts/)** holds the final chat messages the RAG system sends to its LLM, one per
-   evaluation question. Retrieval is done once, so every benchmarked server receives identical
-   inputs and the benchmark measures only inference.
-3. **[inference-bench/](inference-bench/)** serves one open model with several inference
-   engines, replays that workload at 1–32 concurrent users, and explains the differences with GPU,
-   KV-cache and scheduler data. A Colab notebook reproduces it on an L4.
+| Thư mục · Folder | Nội dung · Contents |
+| --- | --- |
+| [`medical-rag/`](medical-rag/) | Chunker, e5 + BM25 + RRF, reranker, FastAPI, đánh giá · evaluation |
+| [`prompts/`](prompts/) | 300 prompt thật, đầu vào chung cho mọi backend · real prompts, identical input for every backend |
+| [`inference-bench/`](inference-bench/) | Load generator, HF/vLLM/Ollama servers, phân tích · analysis, Colab notebook |
+| [`docs/`](docs/) | Spec, kế hoạch · plan, ghi chú phỏng vấn · interview notes |
 
-Stack: Python, PyTorch, Hugging Face Transformers, sentence-transformers, FAISS, rank-bm25, pyvi,
-FastAPI, vLLM, Ollama, Docker, OpenAI API (QA generation and LLM judge).
+## Chạy nhanh · Quick start
 
-Specifications and plan: [docs/medical_rag_spec.md](docs/medical_rag_spec.md),
-[docs/llm_benchmark_spec.md](docs/llm_benchmark_spec.md), [docs/PLAN.md](docs/PLAN.md).
+```bash
+cd medical-rag
+pip install -e ".[data,eval,dev]"
+python scripts/fetch_wikipedia.py
+python -m medrag.index.build
+uvicorn medrag.api.main:app --port 8080
+```
+
+Benchmark: mở · open [`inference-bench/colab/run_benchmark.ipynb`](inference-bench/colab/run_benchmark.ipynb) trên · on a Colab L4 runtime.
+
+## Tài liệu · Docs
+
+- [RAG: kết quả đánh giá · evaluation results](medical-rag/README.md#results)
+- [Benchmark: Q1 đến Q5, profiling · Q1 to Q5, profiling](inference-bench/README.md)
+- [Ghi chú phỏng vấn · Interview notes](docs/interview_answers.md)
+- [Spec RAG](docs/medical_rag_spec.md) · [Spec benchmark](docs/llm_benchmark_spec.md) · [Kế hoạch · Plan](docs/PLAN.md)
+
+## License
+
+Code: [MIT](LICENSE). Văn bản trích từ Wikipedia (`prompts/`, `medical-rag/eval/data/`) theo · Wikipedia text under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
