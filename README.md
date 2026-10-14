@@ -19,7 +19,7 @@
 ---
 
 ## Kết quả chính · Key results
-
+| | ENG | VIE |
 | --- | --- | --- |
 | **7.6×** | vLLM throughput vs Hugging Face Transformers at 32 concurrent users | Throughput của vLLM so với HF Transformers, 32 người dùng |
 | **2.4×** | AWQ 4-bit single-user speed vs FP16, no measurable quality loss | AWQ 4-bit so với FP16 khi 1 người dùng, chất lượng không giảm |
