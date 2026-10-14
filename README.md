@@ -1,6 +1,28 @@
-# LLM Inference Benchmarking for Medical RAG
+# Bilingual Medical RAG + LLM Inference Benchmark
 
-Two projects in one repository, connected by a folder of prompts:
+A Vietnamese–English medical question-answering system built from scratch (hybrid retrieval,
+reranking, cited answers), and a benchmark of how to serve its LLM: **vLLM vs Ollama vs Hugging Face
+Transformers** on an NVIDIA L4, replaying the system's own prompts.
+
+- **vLLM: 7.6× the throughput of Hugging Face Transformers** at 32 concurrent users (Qwen2.5-7B-Instruct, L4).
+- **AWQ 4-bit: 2.4× the single-user speed of FP16** and 2.75× the KV-cache capacity, with no measurable quality loss.
+- **Retrieval: reranking lifts MRR@10 from 0.87 to 0.96**; answers are 98% faithful to their cited sources and
+  90% of questions the documents cannot answer are refused.
+- **Why:** the RAG workload is prefill-bound — 22 prompt tokens per generated token.
+
+![Throughput vs concurrent users: vLLM AWQ and FP16 scale to ~115 tok/s, Ollama to 99, HF Transformers stays at 15](inference-bench/results/plots/1_throughput_vs_concurrency.png)
+
+| Qwen2.5-7B on 1× L4 | 1 user | 8 users | 32 users | p95 time to first token at 8 users |
+| --- | --- | --- | --- | --- |
+| HF Transformers FP16 | 14.9 tok/s | 15.0 | 15.0 | 46 s |
+| vLLM FP16 | 15.9 | 73.3 | 114.1 | 1.2 s |
+| **vLLM AWQ 4-bit** | **38.1** | **102.0** | **118.0** | 1.7 s |
+| Ollama GGUF Q4_K_M | 38.7 | 47.1 | 98.6 | 1.7 s |
+
+Details: [inference benchmark](inference-bench/README.md) (Q1–Q5, profiling, all six figures) ·
+[RAG evaluation](medical-rag/README.md#results) · [interview notes](docs/interview_answers.md)
+
+## How the two parts fit together
 
 ```
  medical-rag/                      prompts/                          inference-bench/
@@ -21,23 +43,11 @@ Two projects in one repository, connected by a folder of prompts:
    evaluation question. Retrieval is done once, so every benchmarked server receives identical
    inputs and the benchmark measures only inference.
 3. **[inference-bench/](inference-bench/)** serves one open model with several inference
-   engines and compares them on that real workload.
+   engines, replays that workload at 1–32 concurrent users, and explains the differences with GPU,
+   KV-cache and scheduler data. A Colab notebook reproduces it on an L4.
 
-## Results at a glance
-
-**Medical RAG** ([details](medical-rag/README.md#results)) — 289 Wikipedia articles, 390 synthetic questions:
-hybrid retrieval + reranking finds the source passage in the top 10 for 100% of answerable questions
-(MRR@10 0.96 vs 0.87 for dense retrieval alone); answers are 98% faithful to their sources, always in the
-question's language and cited; 90% of unanswerable questions end in "not found". Cross-lingual
-questions remain the weak spot (Recall@10 0.30).
-
-**Inference benchmark** ([details](inference-bench/README.md#summary)) — Qwen2.5-7B-Instruct on one L4,
-300 RAG prompts (~1,700 tokens in, ~78 out):
-at one user, 4-bit weights matter more than the engine (2.4×); at 32 users vLLM delivers 7.6× the
-throughput of HF Transformers; vLLM AWQ gives up to 2.2× Ollama's throughput at equal latency with no
-measurable quality loss; prefix caching cuts TTFT by 11–14%. The workload is prefill-bound: shorter
-retrieved context is the biggest remaining lever.
+Stack: Python, PyTorch, Hugging Face Transformers, sentence-transformers, FAISS, rank-bm25, pyvi,
+FastAPI, vLLM, Ollama, Docker, OpenAI API (QA generation and LLM judge).
 
 Specifications and plan: [docs/medical_rag_spec.md](docs/medical_rag_spec.md),
-[docs/llm_benchmark_spec.md](docs/llm_benchmark_spec.md), [docs/PLAN.md](docs/PLAN.md);
-interview questions answered with the measured numbers: [docs/interview_answers.md](docs/interview_answers.md).
+[docs/llm_benchmark_spec.md](docs/llm_benchmark_spec.md), [docs/PLAN.md](docs/PLAN.md).
