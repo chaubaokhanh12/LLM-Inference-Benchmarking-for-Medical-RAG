@@ -36,21 +36,6 @@
 | **vLLM AWQ 4-bit** | **38.1** | **102.0** | **118.0** | 1.7 s |
 | Ollama GGUF Q4_K_M | 38.7 | 47.1 | 98.6 | 1.7 s |
 
-## Cấu trúc · Structure
-
-```
- medical-rag/   →   prompts/   →   inference-bench/
- RAG system         exact LLM      HF Transformers vs vLLM vs Ollama
- + evaluation       inputs         latency, throughput, KV cache
-```
-
-| Thư mục · Folder | Nội dung · Contents |
-| --- | --- |
-| [`medical-rag/`](medical-rag/) | Chunker, e5 + BM25 + RRF, reranker, FastAPI, đánh giá · evaluation |
-| [`prompts/`](prompts/) | 300 prompt thật, đầu vào chung cho mọi backend · real prompts, identical input for every backend |
-| [`inference-bench/`](inference-bench/) | Load generator, HF/vLLM/Ollama servers, phân tích · analysis, Colab notebook |
-| [`docs/`](docs/) | Spec, kế hoạch · plan, ghi chú phỏng vấn · interview notes |
-
 ## Chạy nhanh · Quick start
 
 ```bash
@@ -67,8 +52,6 @@ Benchmark: open [`inference-bench/colab/run_benchmark.ipynb`](inference-bench/co
 
 - [RAG: kết quả đánh giá · evaluation results](medical-rag/README.md#results)
 - [Benchmark: Q1 đến Q5, profiling · Q1 to Q5, profiling](inference-bench/README.md)
-- [Ghi chú phỏng vấn · Interview notes](docs/interview_answers.md)
-- [Spec RAG](docs/medical_rag_spec.md) · [Spec benchmark](docs/llm_benchmark_spec.md) · [Kế hoạch · Plan](docs/PLAN.md)
 
 ## License
 
