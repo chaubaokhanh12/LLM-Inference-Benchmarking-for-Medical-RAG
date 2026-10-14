@@ -46,7 +46,7 @@ Spec gốc: [medical_rag_spec.md](medical_rag_spec.md) (phần 1) và [llm_bench
       metrics, `bench.run`, 14 config E1–E5, aggregate + 6 biểu đồ, quality_eval, test; đã chạy
       thử với Ollama trên laptop
 - [x] Phần 2 — notebook Colab `inference-bench/colab/run_benchmark.ipynb` chạy E1–E4 trên L4 (Colab Pro), lưu Drive, tự bỏ qua thí nghiệm đã xong
-- [ ] Phần 2 — chạy notebook trên Colab (≈9–10 giờ GPU), đưa kết quả về repo, viết README benchmark
+- [x] Phần 2 — chạy E1–E4 trên Colab L4 (13 cấu hình, 0 lỗi), chấm chất lượng E3, README benchmark trả lời Q1–Q5
 
 ## Ràng buộc phần cứng (máy phát triển)
 

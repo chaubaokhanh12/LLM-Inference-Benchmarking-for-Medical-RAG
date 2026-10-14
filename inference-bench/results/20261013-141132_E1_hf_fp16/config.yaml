@@ -1,0 +1,20 @@
+experiment: E1
+backend: hf
+config_name: hf_fp16
+base_url: http://localhost:8001/v1
+model: Qwen/Qwen2.5-7B-Instruct
+quantization: fp16
+server_command: python -m servers.hf_server --model Qwen/Qwen2.5-7B-Instruct --port 8001
+health_url: http://localhost:8001/health
+concurrency:
+- 1
+repeats: 3
+num_prompts: 100
+warmup_requests: 10
+max_tokens: 256
+temperature: 0
+prompts: ../prompts/medical_rag_prompts.jsonl
+tokenizer: Qwen/Qwen2.5-7B-Instruct
+timeout_s: 900
+max_duration_s: 600
+seed: 0

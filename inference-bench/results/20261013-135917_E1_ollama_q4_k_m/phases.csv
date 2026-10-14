@@ -1,0 +1,4 @@
+run_id,experiment,backend,config_name,concurrency,repeat,t_start,t_end,wall_s
+20261013-135917_E1_ollama_q4_k_m,E1,ollama,ollama_q4_k_m,1,1,1791900052.699,1791900265.274,212.576
+20261013-135917_E1_ollama_q4_k_m,E1,ollama,ollama_q4_k_m,1,2,1791900283.687,1791900477.112,193.426
+20261013-135917_E1_ollama_q4_k_m,E1,ollama,ollama_q4_k_m,1,3,1791900494.933,1791900690.533,195.6

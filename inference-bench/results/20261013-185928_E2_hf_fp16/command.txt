@@ -1,0 +1,1 @@
+python -m servers.hf_server --model Qwen/Qwen2.5-7B-Instruct --port 8001

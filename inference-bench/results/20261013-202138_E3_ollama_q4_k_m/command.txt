@@ -1,0 +1,1 @@
+bash servers/start_ollama.sh

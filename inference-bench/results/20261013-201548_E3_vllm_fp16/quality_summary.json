@@ -1,0 +1,8 @@
+{
+  "config_name": "vllm_fp16",
+  "run": "20261013-201548_E3_vllm_fp16",
+  "judge_model": "gpt-4.1-mini-2025-04-14",
+  "n": 100,
+  "faithfulness_mean": 0.9906666666666666,
+  "correctness_mean": 4.68
+}

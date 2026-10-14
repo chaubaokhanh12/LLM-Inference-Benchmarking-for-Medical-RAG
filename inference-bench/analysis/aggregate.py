@@ -18,6 +18,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+from analysis.server_logs import server_facts
 from bench.config import BENCH_ROOT
 
 KEYS = ["experiment", "backend", "config_name", "concurrency"]
@@ -50,6 +51,7 @@ def summarise_run(run_dir: Path) -> list[dict]:
         gpu = gpu.apply(pd.to_numeric, errors="coerce")
     vm = (pd.read_csv(run_dir / "vllm_metrics.csv")
           if (run_dir / "vllm_metrics.csv").exists() else None)
+    facts = server_facts(run_dir)  # weights / KV capacity (vLLM), prompt reuse (Ollama)
     rows = []
     for ph in phases.to_dict("records"):
         r = req[(req["concurrency"] == ph["concurrency"]) & (req["repeat"] == ph["repeat"])]
@@ -79,6 +81,7 @@ def summarise_run(run_dir: Path) -> list[dict]:
                 col = _vllm_col(v, *needles)
                 if col:
                     row[name] = v[col].max()
+        row.update(facts)
         rows.append(row)
     return rows
 

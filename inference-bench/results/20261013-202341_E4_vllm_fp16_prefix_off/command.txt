@@ -1,0 +1,1 @@
+env VLLM_SERVER_DEV_MODE=1 vllm serve Qwen/Qwen2.5-7B-Instruct --served-model-name qwen2.5-7b --max-model-len 4096 --gpu-memory-utilization 0.90 --port 8000 --no-enable-prefix-caching

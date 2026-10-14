@@ -86,3 +86,24 @@ def test_aggregate_and_plots(tmp_path, monkeypatch):
                     "3_throughput_latency_tradeoff.png", "4_fp16_vs_awq.png",
                     "5_prefix_caching_ttft.png", "6_ttft_vs_input_tokens.png"]
     assert pd.read_csv(tmp_path / "summary.csv").shape[0] == len(summary)
+
+
+def test_server_log_facts(tmp_path):
+    from analysis.server_logs import FACTS_FILE, server_facts
+
+    run = tmp_path / "run"
+    run.mkdir()
+    (run / "server.log").write_text(
+        "INFO Model loading took 5.29 GiB memory and 30 seconds\n"
+        "INFO Available KV cache memory: 12.78 GiB\n"
+        "INFO GPU KV cache size: 239,264 tokens\n"
+        "slot operator(): id 1 | task 7 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 1000\n"
+        "slot print_timing: id 1 | task 7 | prompt eval time =  300.0 ms /   1000 tokens (x)\n"
+        "slot operator(): id 2 | task 9 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 1000\n"
+        "slot print_timing: id 2 | task 9 | prompt eval time =   10.0 ms /     20 tokens (x)\n",
+        encoding="utf-8")
+    facts = server_facts(run)
+    assert facts["model_weights_gib"] == 5.29 and facts["kv_cache_tokens"] == 239264
+    assert facts["prompt_reuse_full_share"] == 0.5  # task 9 reused 98% of its prompt
+    (run / "server.log").unlink()  # facts survive without the (git-ignored) log
+    assert server_facts(run) == facts and (run / FACTS_FILE).exists()

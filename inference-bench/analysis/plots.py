@@ -119,19 +119,18 @@ def line_by_config(df: pd.DataFrame, x: str, y: str, out: Path, fname: str, titl
 
 
 def tradeoff(e2: pd.DataFrame, out: Path) -> None:
+    levels = ", ".join(str(int(c)) for c in sorted(e2["concurrency"].unique()))
     fig, ax = new_fig()
-    setup(ax, "Throughput vs p95 latency (each point = one concurrency level)",
-          "p95 end-to-end latency (s)", "Throughput (output tokens/s)")
-    for i, (name, g) in enumerate(e2.groupby("config_name")):
+    # Latency rises with concurrency on every line, so the order of the points is stated once in
+    # the title instead of labelling each point.
+    setup(ax, f"Throughput vs p95 latency — points left to right: {levels} users",
+          "p95 end-to-end latency (s, log scale)", "Throughput (output tokens/s)")
+    for name, g in e2.groupby("config_name"):
         g = g.sort_values("concurrency")
         color, marker = style(name)
         ax.plot(g["e2e_p95_ms"] / 1000, g["throughput_tok_s"], color=color, marker=marker,
                 linewidth=2, markersize=7, markeredgecolor=SURFACE, markeredgewidth=1.5,
                 label=label(name))
-        for _, row in g.iloc[[0, -1]].iterrows():  # label only the ends: c=min and c=max
-            ax.annotate(f"c={int(row['concurrency'])}", (row["e2e_p95_ms"] / 1000, row["throughput_tok_s"]),
-                        xytext=(5, 5 + 10 * i), textcoords="offset points", fontsize=8,
-                        color=INK_2)
     ax.set_xscale("log")
     plain_numbers(ax.xaxis)
     ax.legend(frameon=False, fontsize=8, labelcolor=INK_2)
@@ -161,14 +160,19 @@ def fp16_vs_awq(summary: pd.DataFrame, results: Path, out: Path) -> None:
     for qf in results.glob("*/quality_summary.json"):
         q = json.loads(qf.read_text(encoding="utf-8"))
         quality[q["config_name"]] = q.get("correctness_mean")
-    fig, axes = new_fig(10, 3.8, ncols=3)
-    panels = [("Peak GPU memory (GiB)", lambda n: e.loc[n, "gpu_mem_peak_mib"] / 1024, "{:.1f}"),
-              ("Throughput at 16 users (tok/s)", lambda n: e.loc[n, "throughput_tok_s"], "{:.0f}"),
+    def col(n: str, c: str, scale: float = 1.0) -> float:
+        return float(e.loc[n, c]) / scale if n in e.index and c in e.columns else np.nan
+
+    # vLLM pre-allocates ~90% of VRAM either way, so peak memory looks identical; what AWQ
+    # changes is how that memory splits between weights and KV cache.
+    panels = [("Model weights (GiB)", lambda n: col(n, "model_weights_gib"), "{:.1f}"),
+              ("KV-cache capacity (k tokens)", lambda n: col(n, "kv_cache_tokens", 1000), "{:.0f}"),
+              ("Throughput at 16 users (tok/s)", lambda n: col(n, "throughput_tok_s"), "{:.0f}"),
               ("Answer correctness (1-5, judge)", lambda n: quality.get(n, np.nan), "{:.2f}")]
+    fig, axes = new_fig(13, 3.8, ncols=len(panels))
     for ax, (title, get, fmt) in zip(axes, panels, strict=True):
         setup(ax, title, "", "")
-        vals = [float(get(n)) if n in e.index or "correctness" in title else np.nan for n in names]
-        bars(ax, names, vals, fmt)
+        bars(ax, names, [get(n) for n in names], fmt)
     save(fig, out, "4_fp16_vs_awq.png")
 
 
@@ -213,15 +217,26 @@ def ttft_vs_input(results: Path, out: Path) -> None:
         x = pd.to_numeric(g["prompt_tokens"], errors="coerce")
         y = pd.to_numeric(g["ttft_ms"], errors="coerce")
         ok = x.notna() & y.notna()
+        # A request whose TTFT is far below the others skipped prefill: the server reused the
+        # whole prompt from its cache (llama.cpp does this and cannot be switched off). Those
+        # points are shown in grey and left out of the prefill fit.
+        cached = ok & (y < 0.4 * y[ok].median())
+        fit = ok & ~cached
         color, marker = style(name)
         setup(ax, label(name), "input tokens", "TTFT (ms)")
-        ax.scatter(x[ok], y[ok], s=18, color=color, marker=marker, alpha=0.7, edgecolors=SURFACE, linewidths=0.8)
-        if ok.sum() > 2:
-            slope, intercept = np.polyfit(x[ok], y[ok], 1)
-            xs = np.linspace(x[ok].min(), x[ok].max(), 50)
+        ax.scatter(x[fit], y[fit], s=18, color=color, marker=marker, alpha=0.7, edgecolors=SURFACE, linewidths=0.8)
+        if cached.any():
+            ax.scatter(x[cached], y[cached], s=18, color=MUTED, marker=marker, alpha=0.6,
+                       edgecolors=SURFACE, linewidths=0.8,
+                       label=f"prompt reused from cache ({cached.sum() / ok.sum():.0%})")
+            ax.legend(frameon=False, fontsize=7, labelcolor=INK_2, loc="lower right")
+        if fit.sum() > 2:
+            slope, intercept = np.polyfit(x[fit], y[fit], 1)
+            xs = np.linspace(x[fit].min(), x[fit].max(), 50)
             ax.plot(xs, slope * xs + intercept, color=INK_2, linewidth=1.2)
             ax.annotate(f"≈ {slope * 1000:.0f} ms per 1k tokens", (0.03, 0.95), xycoords="axes fraction",
                         va="top", fontsize=8, color=INK_2)
+        ax.set_ylim(bottom=0)
     save(fig, out, "6_ttft_vs_input_tokens.png")
 
 

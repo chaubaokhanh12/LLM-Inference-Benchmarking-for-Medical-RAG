@@ -1,0 +1,8 @@
+{
+  "config_name": "ollama_q4_k_m",
+  "run": "20261013-202138_E3_ollama_q4_k_m",
+  "judge_model": "gpt-4.1-mini-2025-04-14",
+  "n": 100,
+  "faithfulness_mean": 0.9775,
+  "correctness_mean": 4.63
+}

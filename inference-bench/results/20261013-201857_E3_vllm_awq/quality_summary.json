@@ -1,0 +1,8 @@
+{
+  "config_name": "vllm_awq",
+  "run": "20261013-201857_E3_vllm_awq",
+  "judge_model": "gpt-4.1-mini-2025-04-14",
+  "n": 100,
+  "faithfulness_mean": 0.9875,
+  "correctness_mean": 4.67
+}

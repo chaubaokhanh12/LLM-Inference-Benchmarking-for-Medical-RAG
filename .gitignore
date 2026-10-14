@@ -34,3 +34,6 @@ inference-bench/results/dev_*/
 
 # Local tool config (machine-specific paths)
 .claude/
+
+# server logs are large (llama.cpp logs every prompt-cache decision); facts kept in server_facts.json
+inference-bench/results/**/server.log
