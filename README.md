@@ -61,7 +61,7 @@ python -m medrag.index.build
 uvicorn medrag.api.main:app --port 8080
 ```
 
-Benchmark: mở · open [`inference-bench/colab/run_benchmark.ipynb`](inference-bench/colab/run_benchmark.ipynb) trên · on a Colab L4 runtime.
+Benchmark: open [`inference-bench/colab/run_benchmark.ipynb`](inference-bench/colab/run_benchmark.ipynb)· on a Colab L4 runtime.
 
 ## Tài liệu · Docs
 
