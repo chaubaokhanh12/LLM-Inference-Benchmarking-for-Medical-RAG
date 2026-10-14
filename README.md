@@ -1,4 +1,4 @@
-# 🩺 Medical RAG · LLM Inference Benchmark
+# Medical RAG · LLM Inference Benchmark
 
 **Hỏi đáp y khoa song ngữ Việt Anh xây từ đầu, kèm benchmark cách phục vụ LLM của chính hệ thống.**<br>
 **A bilingual Vietnamese/English medical QA system built from scratch, plus a benchmark of how to serve its LLM.**
@@ -20,7 +20,6 @@
 
 ## Kết quả chính · Key results
 
-| | English | Tiếng Việt |
 | --- | --- | --- |
 | **7.6×** | vLLM throughput vs Hugging Face Transformers at 32 concurrent users | Throughput của vLLM so với HF Transformers, 32 người dùng |
 | **2.4×** | AWQ 4-bit single-user speed vs FP16, no measurable quality loss | AWQ 4-bit so với FP16 khi 1 người dùng, chất lượng không giảm |
